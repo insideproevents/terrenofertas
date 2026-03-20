@@ -57,6 +57,7 @@ const Properties = ({ onShowRiveraCoigues }: PropertiesProps) => {
   const handlePropertyClick = (href?: string) => {
     if (href === '#rivera-coigues' && onShowRiveraCoigues) {
       onShowRiveraCoigues(true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
   const sectionRef = useRef<HTMLDivElement>(null);
