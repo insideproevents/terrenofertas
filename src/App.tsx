@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#e8f7fa]">
-      <Navbar onShowRiveraCoigues={setShowRiveraCoigues} />
+      <Navbar onShowRiveraCoigues={setShowRiveraCoigues} onShowHome={setShowRiveraCoigues} />
       <main>
         {showRiveraCoigues ? (
           <RiveraCoigues />

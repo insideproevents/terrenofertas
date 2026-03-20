@@ -3,9 +3,10 @@ import { Menu, X, Mountain } from 'lucide-react';
 
 interface NavbarProps {
   onShowRiveraCoigues?: (show: boolean) => void;
+  onShowHome?: (show: boolean) => void;
 }
 
-const Navbar = ({ onShowRiveraCoigues }: NavbarProps) => {
+const Navbar = ({ onShowRiveraCoigues, onShowHome }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -30,6 +31,15 @@ const Navbar = ({ onShowRiveraCoigues }: NavbarProps) => {
     if (href === '/rivera-coigues/' || href === '#rivera-coigues') {
       if (onShowRiveraCoigues) {
         onShowRiveraCoigues(true);
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
+      return;
+    }
+    // Check if it's the home link
+    if (href === '#inicio') {
+      if (onShowHome) {
+        onShowHome(false);
       }
       window.scrollTo({ top: 0, behavior: 'smooth' });
       setIsMobileMenuOpen(false);
