@@ -150,10 +150,10 @@ const Contact = () => {
               <div className="p-6 bg-[#0a3d4a] text-white">
                 <div className="quote-mark text-4xl mb-2 opacity-40">"</div>
                 <p className="font-display text-xl italic mb-4">
-                  La tierra es el único bien que no se puede fabricar más.
+                  La naturaleza no es un lugar para visitar. Es el hogar.
                 </p>
                 <p className="text-white/60 text-sm">
-                  — Mark Twain
+                  — Gabriela Mistral
                 </p>
               </div>
             </div>
