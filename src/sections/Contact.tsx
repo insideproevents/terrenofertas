@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle, Sparkles } from 'lucide-react';
 
 const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -64,6 +64,12 @@ const Contact = () => {
       icon: Clock,
       label: 'Horario',
       value: 'Lun - Vie: 9:00 - 18:00',
+    },
+    {
+      icon: Sparkles,
+      label: 'Diseñado por',
+      value: 'Mi Marca en Linea',
+      href: 'https://www.mimarcaenlinea.cl',
     },
   ];
 
