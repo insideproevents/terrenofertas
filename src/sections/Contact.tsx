@@ -53,6 +53,7 @@ const Contact = () => {
       icon: Mail,
       label: 'Email',
       value: 'contacto@terrenofertas.cl',
+      href: 'mailto:contacto@terrenofertas.cl',
     },
     {
       icon: MapPin,
