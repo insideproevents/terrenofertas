@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -40,7 +40,14 @@ const Contact = () => {
     {
       icon: Phone,
       label: 'Teléfono',
-      value: '+56 9 1234 5678',
+      value: '+56 89608591',
+      href: 'tel:+5689608591',
+    },
+    {
+      icon: MessageCircle,
+      label: 'WhatsApp',
+      value: '+56 89608591',
+      href: 'https://wa.me/5689608591',
     },
     {
       icon: Mail,
@@ -110,9 +117,12 @@ const Contact = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
                 {contactInfo.map((item, index) => (
-                  <div
+                  <a
                     key={index}
-                    className="flex items-start gap-4 p-4 bg-white/50 backdrop-blur-sm border border-[#0a3d4a]/10"
+                    href={item.href || '#'}
+                    target={item.href?.startsWith('http') ? '_blank' : undefined}
+                    rel={item.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="flex items-start gap-4 p-4 bg-white/50 backdrop-blur-sm border border-[#0a3d4a]/10 hover:bg-white/80 transition-colors duration-300"
                   >
                     <div className="w-10 h-10 rounded-full bg-[#0f6b7d]/10 flex items-center justify-center flex-shrink-0">
                       <item.icon className="w-5 h-5 text-[#0f6b7d]" />
@@ -125,7 +135,7 @@ const Contact = () => {
                         {item.value}
                       </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
 
@@ -201,7 +211,7 @@ const Contact = () => {
                           setFormData({ ...formData, phone: e.target.value })
                         }
                         className="w-full px-4 py-3 border border-[#0a3d4a]/20 focus:border-[#0f6b7d] focus:outline-none transition-colors duration-300"
-                        placeholder="+56 9 1234 5678"
+                        placeholder="+56 89608591"
                       />
                     </div>
                   </div>
