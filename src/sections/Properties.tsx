@@ -20,7 +20,7 @@ const properties: Property[] = [
     image:
       'https://kimi-web-img.moonshot.cn/img/www.pew.org/f9ad3f46cdfa8ae3808f5ff945855e27916a6eda.jpg',
     featured: true,
-    href: 'https://terrenofertas.vercel.app/rivera-coigues/',
+    href: '#rivera-coigues',
   },
   {
     id: 2,
@@ -49,7 +49,11 @@ const properties: Property[] = [
   },
 ];
 
-const Properties = () => {
+interface PropertiesProps {
+  onShowRiveraCoigues?: (show: boolean) => void;
+}
+
+const Properties = ({ onShowRiveraCoigues: _onShowRiveraCoigues }: PropertiesProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 

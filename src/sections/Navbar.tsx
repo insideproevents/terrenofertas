@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Mountain } from 'lucide-react';
 
-const Navbar = () => {
+interface NavbarProps {
+  onShowRiveraCoigues?: (show: boolean) => void;
+}
+
+const Navbar = ({ onShowRiveraCoigues }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -22,6 +26,15 @@ const Navbar = () => {
   ];
 
   const scrollToSection = (href: string) => {
+    // Check if it's a special link for Rivera Coigues
+    if (href === '/rivera-coigues/' || href === '#rivera-coigues') {
+      if (onShowRiveraCoigues) {
+        onShowRiveraCoigues(true);
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
+      return;
+    }
     // Check if it's an external link
     if (href.startsWith('/')) {
       window.location.href = href;
