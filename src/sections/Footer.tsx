@@ -129,7 +129,7 @@ const Footer = () => {
               © {currentYear} Terrenofertas. Todos los derechos reservados.
             </p>
             <p className="text-white/40 text-xs font-light">
-              Diseñado con pasión por la Patagonia
+              Diseñado por Inside:Lab y Mi Marca en Linea.
             </p>
           </div>
         </div>
