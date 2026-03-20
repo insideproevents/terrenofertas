@@ -53,7 +53,12 @@ interface PropertiesProps {
   onShowRiveraCoigues?: (show: boolean) => void;
 }
 
-const Properties = ({ onShowRiveraCoigues: _onShowRiveraCoigues }: PropertiesProps) => {
+const Properties = ({ onShowRiveraCoigues }: PropertiesProps) => {
+  const handlePropertyClick = (href?: string) => {
+    if (href === '#rivera-coigues' && onShowRiveraCoigues) {
+      onShowRiveraCoigues(true);
+    }
+  };
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -164,8 +169,10 @@ const Properties = ({ onShowRiveraCoigues: _onShowRiveraCoigues }: PropertiesPro
                   <a
                     key={property.id}
                     href={property.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handlePropertyClick(property.href);
+                    }}
                     className={cardClass}
                     style={cardStyle}
                   >
