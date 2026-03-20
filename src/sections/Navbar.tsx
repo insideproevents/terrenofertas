@@ -15,12 +15,19 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Inicio', href: '#inicio' },
+    { name: 'Terrenos', href: '/rivera-coigues/' },
     { name: 'Catálogo Nacional', href: '#catalogo' },
     { name: 'Catálogo Internacional', href: '#internacional' },
     { name: 'Contacto', href: '#contacto' },
   ];
 
   const scrollToSection = (href: string) => {
+    // Check if it's an external link
+    if (href.startsWith('/')) {
+      window.location.href = href;
+      setIsMobileMenuOpen(false);
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
