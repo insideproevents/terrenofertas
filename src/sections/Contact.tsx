@@ -57,7 +57,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Oficina',
-      value: 'Puerto Varas, Chile',
+      value: 'Las Condes, Santiago, Chile',
     },
     {
       icon: Clock,
