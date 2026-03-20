@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 
-const RiveraCoigues = ({ onBack }: { onBack?: () => void }) => {
+const RiveraCoigues = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
@@ -51,14 +51,6 @@ const RiveraCoigues = ({ onBack }: { onBack?: () => void }) => {
         </div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto pt-20">
-          {onBack && (
-            <button 
-              onClick={onBack}
-              className="absolute top-24 left-4 md:left-8 text-white/80 hover:text-white flex items-center gap-2 text-sm uppercase tracking-wider transition-colors"
-            >
-              ← Volver
-            </button>
-          )}
           <p className="text-sm uppercase tracking-[0.3em] text-[#5bc0de] mb-6">Patagonia Norte, Chile</p>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight">
             Rivera de los<br />

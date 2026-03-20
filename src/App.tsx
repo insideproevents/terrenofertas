@@ -16,7 +16,7 @@ function App() {
       <Navbar onShowRiveraCoigues={setShowRiveraCoigues} />
       <main>
         {showRiveraCoigues ? (
-          <RiveraCoigues onBack={() => setShowRiveraCoigues(false)} />
+          <RiveraCoigues />
         ) : (
           <>
             <Hero />
