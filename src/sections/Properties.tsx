@@ -37,7 +37,7 @@ const properties: Property[] = [
     subtitle: 'Praderas',
     location: 'Aysén, Chile',
     image:
-      'https://kimi-web-img.moonshot.cn/img/patagonia-chile.com/9a2ab06935ba7c8590a1cc3faf7015d17758c37c.jpg',
+      '/portada_mañihuales.jpg',
     featured: true,
   },
   {
