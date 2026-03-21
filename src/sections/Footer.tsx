@@ -8,9 +8,8 @@ const Footer = () => {
       title: 'Navegación',
       links: [
         { name: 'Inicio', href: '#inicio' },
-        { name: 'Terrenos', href: '/rivera-coigues/' },
-        { name: 'Catálogo Nacional', href: '#catalogo' },
-        { name: 'Catálogo Internacional', href: '#internacional' },
+        { name: 'Destacados', href: '#catalogo' },
+        { name: 'Catálogo', href: '#catalogo' },
         { name: 'Contacto', href: '#contacto' },
       ],
     },
