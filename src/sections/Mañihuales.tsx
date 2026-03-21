@@ -61,7 +61,7 @@ const Mañihuales = () => {
           </p>
           <div className="mt-10">
             <p className="text-sm uppercase tracking-[0.2em] mb-2 text-white/70">Desde</p>
-            <p className="text-4xl md:text-5xl font-display">$4.990.000</p>
+            <p className="text-4xl md:text-5xl font-display">$33.990.000</p>
           </div>
           <div className="mt-10">
             <Button 
