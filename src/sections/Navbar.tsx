@@ -74,6 +74,21 @@ const Navbar = ({ onShowRiveraCoigues, onShowMañihuales, onShowRioBlanco, onSho
       setIsMobileMenuOpen(false);
       return;
     }
+    // Check if it's the catalog/destacados link - go to main page first
+    if (href === '#catalogo') {
+      if (onShowHome) {
+        onShowHome(false);
+      }
+      // Wait for state to update, then scroll to catalog
+      setTimeout(() => {
+        const element = document.querySelector('#catalogo');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+      setIsMobileMenuOpen(false);
+      return;
+    }
     // Check if it's an external link
     if (href.startsWith('/')) {
       window.location.href = href;
