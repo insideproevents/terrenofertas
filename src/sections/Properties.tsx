@@ -39,6 +39,7 @@ const properties: Property[] = [
     image:
       '/portada_mañihuales.jpg',
     featured: true,
+    href: '#mañihuales',
   },
   {
     id: 4,
@@ -53,12 +54,17 @@ const properties: Property[] = [
 
 interface PropertiesProps {
   onShowRiveraCoigues?: (show: boolean) => void;
+  onShowMañihuales?: (show: boolean) => void;
 }
 
-const Properties = ({ onShowRiveraCoigues }: PropertiesProps) => {
+const Properties = ({ onShowRiveraCoigues, onShowMañihuales }: PropertiesProps) => {
   const handlePropertyClick = (href?: string) => {
     if (href === '#rivera-coigues' && onShowRiveraCoigues) {
       onShowRiveraCoigues(true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    if (href === '#mañihuales' && onShowMañihuales) {
+      onShowMañihuales(true);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
