@@ -4,10 +4,12 @@ import { Menu, X, Mountain } from 'lucide-react';
 interface NavbarProps {
   onShowRiveraCoigues?: (show: boolean) => void;
   onShowMañihuales?: (show: boolean) => void;
+  onShowRioBlanco?: (show: boolean) => void;
+  onShowSantuarioRioCondor?: (show: boolean) => void;
   onShowHome?: (show: boolean) => void;
 }
 
-const Navbar = ({ onShowRiveraCoigues, onShowMañihuales, onShowHome }: NavbarProps) => {
+const Navbar = ({ onShowRiveraCoigues, onShowMañihuales, onShowRioBlanco, onShowSantuarioRioCondor, onShowHome }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -40,6 +42,24 @@ const Navbar = ({ onShowRiveraCoigues, onShowMañihuales, onShowHome }: NavbarPr
     if (href === '/mañihuales/' || href === '#mañihuales') {
       if (onShowMañihuales) {
         onShowMañihuales(true);
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
+      return;
+    }
+    // Check if it's a special link for Rio Blanco
+    if (href === '/rio-blanco/' || href === '#rio-blanco') {
+      if (onShowRioBlanco) {
+        onShowRioBlanco(true);
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
+      return;
+    }
+    // Check if it's a special link for Santuario Rio Condor
+    if (href === '/santuario-rio-condor/' || href === '#santuario-rio-condor') {
+      if (onShowSantuarioRioCondor) {
+        onShowSantuarioRioCondor(true);
       }
       window.scrollTo({ top: 0, behavior: 'smooth' });
       setIsMobileMenuOpen(false);

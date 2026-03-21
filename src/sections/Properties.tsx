@@ -30,6 +30,7 @@ const properties: Property[] = [
     image:
       'https://kimi-web-img.moonshot.cn/img/viajesikea.com/f42a14b7bc08109b58f7e29152cc024d3eedb0b3.jpg',
     featured: true,
+    href: '#rio-blanco',
   },
   {
     id: 3,
@@ -49,15 +50,18 @@ const properties: Property[] = [
     image:
       'https://kimi-web-img.moonshot.cn/img/www.gochile.cl/48fc88f7fc340cebee328b0008472a88ddcf86dd.jpg',
     featured: true,
+    href: '#santuario-rio-condor',
   },
 ];
 
 interface PropertiesProps {
   onShowRiveraCoigues?: (show: boolean) => void;
   onShowMañihuales?: (show: boolean) => void;
+  onShowRioBlanco?: (show: boolean) => void;
+  onShowSantuarioRioCondor?: (show: boolean) => void;
 }
 
-const Properties = ({ onShowRiveraCoigues, onShowMañihuales }: PropertiesProps) => {
+const Properties = ({ onShowRiveraCoigues, onShowMañihuales, onShowRioBlanco, onShowSantuarioRioCondor }: PropertiesProps) => {
   const handlePropertyClick = (href?: string) => {
     if (href === '#rivera-coigues' && onShowRiveraCoigues) {
       onShowRiveraCoigues(true);
@@ -65,6 +69,14 @@ const Properties = ({ onShowRiveraCoigues, onShowMañihuales }: PropertiesProps)
     }
     if (href === '#mañihuales' && onShowMañihuales) {
       onShowMañihuales(true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    if (href === '#rio-blanco' && onShowRioBlanco) {
+      onShowRioBlanco(true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    if (href === '#santuario-rio-condor' && onShowSantuarioRioCondor) {
+      onShowSantuarioRioCondor(true);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
