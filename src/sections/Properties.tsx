@@ -16,7 +16,7 @@ const properties: Property[] = [
     id: 1,
     name: 'Rivera de los Coigües',
     subtitle: 'Río Condor',
-    location: 'Patagonia Norte, Chile',
+    location: 'Patagonia, Chile',
     image:
       'https://kimi-web-img.moonshot.cn/img/www.pew.org/f9ad3f46cdfa8ae3808f5ff945855e27916a6eda.jpg',
     featured: true,

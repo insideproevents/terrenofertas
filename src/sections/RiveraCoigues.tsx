@@ -51,7 +51,7 @@ const RiveraCoigues = () => {
         </div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto pt-20">
-          <p className="text-sm uppercase tracking-[0.3em] text-[#5bc0de] mb-6">Patagonia Norte, Chile</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-[#5bc0de] mb-6">Patagonia, Chile</p>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight">
             Rivera de los<br />
             <span className="italic text-[#5bc0de]">Coigües</span>
