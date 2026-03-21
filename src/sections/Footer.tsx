@@ -130,7 +130,7 @@ const Footer = () => {
               © {currentYear} Terrenofertas. Todos los derechos reservados.
             </p>
             <p className="text-white/70 text-sm font-light">
-              Diseñado por <a href="https://mimarcaenlinea.cl" target="_blank" rel="noopener noreferrer" className="text-[#5bc0de] hover:text-white transition-colors">Mi Marca en Linea</a>.
+              Diseñado por <a href="https://www.mimarcaenlinea.cl" target="_blank" rel="noopener noreferrer" className="text-[#5bc0de] hover:text-white transition-colors">Mi Marca en Linea</a>.
             </p>
           </div>
         </div>
