@@ -79,13 +79,14 @@ const Navbar = ({ onShowRiveraCoigues, onShowMañihuales, onShowRioBlanco, onSho
       if (onShowHome) {
         onShowHome(false);
       }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       // Wait for state to update, then scroll to catalog
       setTimeout(() => {
         const element = document.querySelector('#catalogo');
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 100);
+      }, 150);
       setIsMobileMenuOpen(false);
       return;
     }
