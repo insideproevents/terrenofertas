@@ -26,7 +26,7 @@ const Intro = () => {
     <section
       id="destacados"
       ref={sectionRef}
-      className="relative py-24 md:py-32 lg:py-40 bg-[#e8f7fa]"
+      className="relative py-16 md:py-20 lg:py-24 bg-[#e8f7fa]"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">

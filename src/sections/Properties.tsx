@@ -87,7 +87,7 @@ const Properties = ({ onShowRiveraCoigues }: PropertiesProps) => {
     <section
       id="catalogo"
       ref={sectionRef}
-      className="relative py-24 md:py-32 bg-[#e8f7fa]"
+      className="relative py-16 md:py-20 bg-[#e8f7fa]"
     >
       {/* Section Header */}
       <div className="w-full px-6 lg:px-12 xl:px-20 mb-16">
