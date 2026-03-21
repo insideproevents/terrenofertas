@@ -129,7 +129,7 @@ const Navbar = ({ onShowRiveraCoigues, onShowMañihuales, onShowRioBlanco, onSho
                 } group-hover:scale-110`}
               />
               <span
-                className={`font-display text-xl font-medium tracking-wider transition-colors duration-300 ${
+                className={`font-light tracking-[0.25em] text-lg uppercase transition-colors duration-300 ${
                   isScrolled ? 'text-white' : 'text-white'
                 }`}
               >

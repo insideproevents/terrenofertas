@@ -60,7 +60,7 @@ const Footer = () => {
                 className="flex items-center gap-3 mb-6 group"
               >
                 <Mountain className="w-10 h-10 text-[#5bc0de] group-hover:scale-110 transition-transform duration-300" />
-                <span className="font-display text-2xl font-medium tracking-wider">
+                <span className="font-light tracking-[0.25em] text-xl uppercase">
                   TERRENOFERTAS
                 </span>
               </a>
