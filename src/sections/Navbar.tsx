@@ -20,7 +20,7 @@ const Navbar = ({ onShowRiveraCoigues, onShowHome }: NavbarProps) => {
 
   const navLinks = [
     { name: 'Inicio', href: '#inicio' },
-    { name: 'Patagonia Select', href: '/rivera-coigues/' },
+    { name: 'Destacadas', href: '/rivera-coigues/' },
     { name: 'Contacto', href: '#contacto' },
   ];
 

@@ -74,7 +74,7 @@ const Intro = () => {
             }`}
           >
             <p className="text-[#4a6572] text-base md:text-lg leading-relaxed font-light">
-              Caminos bien trazados, terrenos planos con cauces de agua
+              Caminos bien trazados, accesibles, con cauces de agua
               cristalina, árboles majestuosos y la comodidad de estar cerca de
               la ciudad.
             </p>
