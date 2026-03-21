@@ -29,6 +29,7 @@ const properties: Property[] = [
     location: 'Patagonia Central, Chile',
     image:
       'https://kimi-web-img.moonshot.cn/img/viajesikea.com/f42a14b7bc08109b58f7e29152cc024d3eedb0b3.jpg',
+    featured: true,
   },
   {
     id: 3,
@@ -37,6 +38,7 @@ const properties: Property[] = [
     location: 'Aysén, Chile',
     image:
       'https://kimi-web-img.moonshot.cn/img/patagonia-chile.com/9a2ab06935ba7c8590a1cc3faf7015d17758c37c.jpg',
+    featured: true,
   },
   {
     id: 4,
