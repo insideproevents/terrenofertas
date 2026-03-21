@@ -113,14 +113,12 @@ const Properties = ({ onShowRiveraCoigues }: PropertiesProps) => {
             {properties.map((property, index) => {
               const cardClass = `card-glaciar group relative overflow-hidden cursor-pointer transition-all duration-700 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
-              } ${property.featured ? 'md:col-span-2' : ''}`;
+              }`;
               const cardStyle = { transitionDelay: `${index * 150 + 200}ms` };
               const cardContent = (
                 <>
                   <div
-                    className={`relative overflow-hidden ${
-                      property.featured ? 'h-[400px] md:h-[500px]' : 'h-[350px]'
-                    }`}
+                    className={`relative overflow-hidden h-[350px]`}
                   >
                     <img
                       src={property.image}
