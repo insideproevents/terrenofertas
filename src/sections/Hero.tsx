@@ -58,15 +58,17 @@ const Hero = () => {
       <div className="relative z-10 flex items-center px-6 max-w-6xl mx-auto gap-12 lg:gap-20">
 
         {/* Winner Image */}
-        <div className="hidden lg:flex shrink-0">
+        {/* Winner Image */}
+        <div className="hidden lg:flex w-40 shrink-0">
           <img 
             src="/winner.png" 
             alt="Winner Award"
-            className="w-24 h-24 lg:w-32 lg:h-32 object-contain drop-shadow-2xl hover:scale-110 transition-all duration-500 z-30 absolute left-1/2 -translate-x-1/2 -top-12 lg:-top-16"
+            className="w-28 h-28 object-contain drop-shadow-2xl hover:scale-105 transition-all duration-500"
           />
         </div>
         {/* Text Content */}
-        <div className="flex-1 text-center lg:text-left w-full">
+        <div className="flex-1 text-center lg:text-left">
+
 
 
         {/* Year Badge */}
