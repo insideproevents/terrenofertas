@@ -55,7 +55,18 @@ const Hero = () => {
       <div className="absolute inset-0 mist-overlay animate-mist" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+      <div className="relative z-10 flex items-center px-6 max-w-6xl mx-auto gap-12 lg:gap-20">
+        {/* Winner Image */}
+        <div className="hidden lg:flex shrink-0">
+          <img 
+            src="/rivera-coigues/winner.png" 
+            alt="Winner Award"
+            className="w-32 h-32 lg:w-40 lg:h-40 object-contain drop-shadow-2xl bg-white/10 backdrop-blur-xl rounded-2xl p-4 border border-white/20 hover:scale-105 transition-all duration-500 z-20"
+          />
+        </div>
+        {/* Text Content */}
+        <div className="flex-1 text-center lg:text-left">
+
         {/* Year Badge */}
         <div
           className="inline-block mb-8 opacity-0 animate-fade-in"
