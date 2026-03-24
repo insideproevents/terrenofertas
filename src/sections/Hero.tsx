@@ -56,6 +56,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 flex items-center px-6 max-w-6xl mx-auto gap-12 lg:gap-20">
+
         {/* Winner Image */}
         <div className="hidden lg:flex shrink-0">
           <img 
@@ -76,6 +77,7 @@ const Hero = () => {
             Patagonia Select 2026
           </span>
         </div>
+
 
         {/* Main Title */}
         <h1
@@ -122,8 +124,10 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      </div>
 
       {/* Scroll Indicator */}
+
       <button
         onClick={scrollToContent}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/70 hover:text-[#5bc0de] transition-colors duration-300 animate-bounce"
