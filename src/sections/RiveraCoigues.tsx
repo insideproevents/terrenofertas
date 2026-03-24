@@ -44,11 +44,11 @@ const RiveraCoigues = () => {
         return;
       }
       if (e.key === 'ArrowLeft') {
-        setSelectedIndex((prev) => (prev! > 0 ? prev! - 1 : 9));
+setSelectedIndex((prev) => (prev! > 0 ? prev! - 1 : 8));
         return;
       }
       if (e.key === 'ArrowRight') {
-        setSelectedIndex((prev) => (prev! < 9 ? prev! + 1 : 0));
+setSelectedIndex((prev) => (prev! < 8 ? prev! + 1 : 0));
         return;
       }
     };
@@ -229,7 +229,7 @@ const RiveraCoigues = () => {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {Array.from({ length: 10 }, (_, i) => (
+{Array.from({ length: 9 }, (_, i) => (
               <div
                 key={i}
                 className="group cursor-pointer overflow-hidden rounded-lg shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
@@ -341,7 +341,7 @@ const RiveraCoigues = () => {
           onClick={() => setSelectedIndex(null)}
         />
         <DialogContent className="p-0 m-0 border-none shadow-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 z-[9999] fixed inset-0 w-screen h-screen max-w-none max-h-none bg-transparent">
-          <div className="flex items-center justify-center w-full h-full relative">
+className="min-h-screen flex items-center justify-center p-4 relative"
             <button
               onClick={() => setSelectedIndex(prev => prev! > 0 ? prev! - 1 : 9)}
               className="absolute left-12 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 rounded-full w-14 h-14 flex items-center justify-center text-white transition-all duration-300 z-10"
@@ -351,7 +351,7 @@ const RiveraCoigues = () => {
             <img
               src={`/rivera-coigues/galeria/los_coigues_${selectedIndex! + 1}.jpg`}
               alt={`Imagen ${selectedIndex! + 1}`}
-              className="max-h-screen max-w-5xl object-contain p-16"
+className="w-full h-full max-w-[95vw] max-h-[95vh] object-contain p-4 sm:p-8 md:p-12 lg:p-16 flex items-center justify-center"
             />
             <button
               onClick={() => setSelectedIndex(prev => prev! < 9 ? prev! + 1 : 0)}
@@ -365,8 +365,8 @@ const RiveraCoigues = () => {
             >
               <X className="w-7 h-7" />
             </button>
-            <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 bg-black/70 text-white px-8 py-3 rounded-full text-lg font-semibold">
-              {selectedIndex! + 1} / 10
+className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black/70 text-white px-6 py-2 rounded-full text-sm sm:text-base font-semibold drop-shadow-lg">
+ {selectedIndex! + 1} / 9
             </div>
           </div>
         </DialogContent>
