@@ -55,81 +55,75 @@ const Hero = () => {
       <div className="absolute inset-0 mist-overlay animate-mist" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center px-6 max-w-6xl mx-auto gap-12 lg:gap-20">
-        
-        {/* Winner Image */}
-        <div className="hidden lg:flex order-2 w-40 shrink-0 self-start ml-auto">
-          <img 
-            src="/winner.png" 
-            alt="Winner Award"
-            className="w-28 h-28 object-contain drop-shadow-2xl hover:scale-105 transition-all duration-500"
-          />
-        </div>
-        
-        {/* Text Content */}
-        <div className="flex-1 text-center max-w-4xl order-1 lg:order-none">
-
-        {/* Year Badge */}
-        <div
-          className="inline-block mb-8 opacity-0 animate-fade-in"
-          style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
-        >
-          <span className="text-white/80 text-sm tracking-[0.3em] uppercase font-light">
-            Patagonia Select 2026
-          </span>
-        </div>
-
-
-
-        {/* Main Title */}
-        <h1
-          className="font-display text-5xl md:text-7xl lg:text-8xl text-white font-light mb-8 opacity-0 animate-fade-in-up"
-          style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
-        >
-          <span className="italic">Los terrenos</span>
-          <br />
-          <span className="font-medium">más destacados</span>
-        </h1>
-
-        {/* Decorative Line - Turquesa */}
-        <div
-          className="w-24 h-px bg-gradient-to-r from-transparent via-[#5bc0de] to-transparent mx-auto mb-8 opacity-0 animate-fade-in"
-          style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}
-        />
-
-        {/* Subtitle */}
-        <p
-          className="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-in-up"
-          style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}
-        >
-          Imagina despertar rodeado de bosques milenarios, con el sonido del río
-          a tus pies y vistas que quitan el aliento.
-        </p>
-
-        {/* CTA Button */}
-        <div
-          className="mt-12 opacity-0 animate-fade-in-up"
-          style={{ animationDelay: '1.1s', animationFillMode: 'forwards' }}
-        >
-          <a
-            href="#catalogo"
-            onClick={(e) => {
-              e.preventDefault();
-              const element = document.querySelector('#catalogo');
-              if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-            className="btn-glaciar inline-flex items-center gap-3 px-8 py-4 border border-white/40 text-white text-sm tracking-[0.2em] uppercase font-light hover:bg-white/10 hover:border-[#5bc0de]/60 transition-all duration-500"
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 flex flex-col items-center justify-center gap-12 lg:gap-20">
+        {/* Text Content - Always centered */}
+        <div className="text-center max-w-4xl">
+          
+          {/* Year Badge */}
+          <div
+            className="inline-block mb-8 opacity-0 animate-fade-in"
+            style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
           >
-            Explorar Propiedades
-          </a>
+            <span className="text-white/80 text-sm tracking-[0.3em] uppercase font-light">
+              Patagonia Select 2026
+            </span>
+          </div>
+
+          {/* Main Title */}
+          <h1
+            className="font-display text-5xl md:text-7xl lg:text-8xl text-white font-light mb-8 opacity-0 animate-fade-in-up"
+            style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
+          >
+            <span className="italic">Los terrenos</span>
+            <br />
+            <span className="font-medium">más destacados</span>
+          </h1>
+
+          {/* Decorative Line - Turquesa */}
+          <div
+            className="w-24 h-px bg-gradient-to-r from-transparent via-[#5bc0de] to-transparent mx-auto mb-8 opacity-0 animate-fade-in"
+            style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}
+          />
+
+          {/* Subtitle */}
+          <p
+            className="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-in-up"
+            style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}
+          >
+            Imagina despertar rodeado de bosques milenarios, con el sonido del río
+            a tus pies y vistas que quitan el aliento.
+          </p>
+
+          {/* CTA Button */}
+          <div
+            className="mt-12 opacity-0 animate-fade-in-up"
+            style={{ animationDelay: '1.1s', animationFillMode: 'forwards' }}
+          >
+            <a
+              href="#catalogo"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.querySelector('#catalogo');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="btn-glaciar inline-flex items-center gap-3 px-8 py-4 border border-white/40 text-white text-sm tracking-[0.2em] uppercase font-light hover:bg-white/10 hover:border-[#5bc0de]/60 transition-all duration-500"
+            >
+              Explorar Propiedades
+            </a>
+          </div>
         </div>
-      </div>
+
+        {/* Winner Image - Larger absolute positioned */}
+        <img 
+          src="/winner.png" 
+          alt="Winner Award"
+          className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2 w-36 h-36 lg:w-48 lg:h-48 xl:w-56 xl:h-56 object-contain drop-shadow-2xl z-20 pointer-events-none"
+        />
       </div>
 
       {/* Scroll Indicator */}
-
       <button
         onClick={scrollToContent}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/70 hover:text-[#5bc0de] transition-colors duration-300 animate-bounce"
@@ -159,3 +153,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
