@@ -5,8 +5,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 
-
-
 const RiveraCoigues = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -16,7 +14,6 @@ const RiveraCoigues = () => {
     phone: '',
     message: '',
   });
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,27 +33,8 @@ const RiveraCoigues = () => {
     return () => observer.disconnect();
   }, []);
 
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (selectedIndex === null) return;
-      if (e.key === 'Escape') {
-        setSelectedIndex(null);
-        return;
-      }
-      if (e.key === 'ArrowLeft') {
-setSelectedIndex((prev) => (prev! > 0 ? prev! - 1 : 8));
-        return;
-      }
-      if (e.key === 'ArrowRight') {
-setSelectedIndex((prev) => (prev! < 8 ? prev! + 1 : 0));
-        return;
-      }
-    };
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [selectedIndex]);
-
   const handleSubmit = (e: React.FormEvent) => {
+
     e.preventDefault();
     alert('Gracias por contactarnos. Te responderemos pronto.');
     setFormData({ name: '', email: '', phone: '', message: '' });
