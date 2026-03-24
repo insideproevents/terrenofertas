@@ -119,7 +119,7 @@ const Hero = () => {
         <img 
           src="/winner.png" 
           alt="Winner Award"
-"hidden lg:block absolute left-8 top-[20%] -translate-y-1/2 w-[84px] h-[84px] lg:w-[117px] lg:h-[117px] xl:w-[138px] xl:h-[138px] object-contain drop-shadow-2xl z-20 pointer-events-none"
+"hidden lg:block absolute left-8 top-0 scale-300 lg:scale-[2.5] xl:scale-[3] w-[84px] h-[84px] lg:w-[252px] lg:h-[252px] xl:w-[414px] xl:h-[414px] object-contain drop-shadow-2xl z-20 pointer-events-none"
         />
 
       </div>
