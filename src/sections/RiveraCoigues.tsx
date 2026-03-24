@@ -229,12 +229,10 @@ setSelectedIndex((prev) => (prev! < 8 ? prev! + 1 : 0));
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-{Array.from({ length: 10 }, (_, i) => (
-
+{Array.from({ length: 9 }, (_, i) => (
               <div
                 key={i}
-                className="group cursor-pointer overflow-hidden rounded-lg shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
-                onClick={() => setSelectedIndex(i)}
+                className="group overflow-hidden rounded-lg shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
               >
                 <img 
                   src={`/rivera-coigues/galeria/los_coigues_${i+1}.jpg`}
@@ -244,6 +242,7 @@ setSelectedIndex((prev) => (prev! < 8 ? prev! + 1 : 0));
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
