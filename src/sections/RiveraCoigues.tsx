@@ -4,6 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import { Dialog, DialogContent, DialogOverlay } from '@/components/ui/dialog';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 const RiveraCoigues = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -14,6 +16,7 @@ const RiveraCoigues = () => {
     phone: '',
     message: '',
   });
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,6 +35,26 @@ const RiveraCoigues = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (selectedIndex === null) return;
+      if (e.key === 'Escape') {
+        setSelectedIndex(null);
+        return;
+      }
+      if (e.key === 'ArrowLeft') {
+        setSelectedIndex((prev) => (prev! > 0 ? prev! - 1 : 9));
+        return;
+      }
+      if (e.key === 'ArrowRight') {
+        setSelectedIndex((prev) => (prev! < 9 ? prev! + 1 : 0));
+        return;
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [selectedIndex]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -193,8 +216,38 @@ const RiveraCoigues = () => {
         </div>
       </section>
 
+      {/* Gallery Section */}
+      <section 
+        id="galeria"
+        className="py-24 lg:py-32 bg-[#e8f4f8]"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Explora Visualmente</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+              Galería <span className="italic text-[#5bc0de]">| Los Coigües</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {Array.from({ length: 10 }, (_, i) => (
+              <div
+                key={i}
+                className="group cursor-pointer overflow-hidden rounded-lg shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
+                onClick={() => setSelectedIndex(i)}
+              >
+                <img 
+                  src={`/rivera-coigues/galeria/los_coigues_${i+1}.jpg`}
+                  alt={`Los Coigües ${i+1}`}
+                  className="w-full h-64 lg:h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Master Plan */}
-      <section className="py-24 lg:py-32 bg-[#e8f4f8]">
+      <section className="py-24 lg:py-32 bg-[#e8f4f8]"> 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Proyecto</p>
@@ -280,6 +333,44 @@ const RiveraCoigues = () => {
           </form>
         </div>
       </section>
+
+      {/* Lightbox Modal */}
+      <Dialog open={selectedIndex !== null} onOpenChange={() => setSelectedIndex(null)} modal>
+        <DialogOverlay 
+          className="fixed inset-0 bg-black/90 z-[9999] data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0"
+          onClick={() => setSelectedIndex(null)}
+        />
+        <DialogContent className="p-0 m-0 border-none shadow-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 z-[9999] fixed inset-0 w-screen h-screen max-w-none max-h-none bg-transparent">
+          <div className="flex items-center justify-center w-full h-full relative">
+            <button
+              onClick={() => setSelectedIndex(prev => prev! > 0 ? prev! - 1 : 9)}
+              className="absolute left-12 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 rounded-full w-14 h-14 flex items-center justify-center text-white transition-all duration-300 z-10"
+            >
+              <ChevronLeft className="w-7 h-7" />
+            </button>
+            <img
+              src={`/rivera-coigues/galeria/los_coigues_${selectedIndex! + 1}.jpg`}
+              alt={`Imagen ${selectedIndex! + 1}`}
+              className="max-h-screen max-w-5xl object-contain p-16"
+            />
+            <button
+              onClick={() => setSelectedIndex(prev => prev! < 9 ? prev! + 1 : 0)}
+              className="absolute right-12 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 rounded-full w-14 h-14 flex items-center justify-center text-white transition-all duration-300 z-10"
+            >
+              <ChevronRight className="w-7 h-7" />
+            </button>
+            <button
+              onClick={() => setSelectedIndex(null)}
+              className="absolute top-12 right-12 bg-black/60 hover:bg-black/80 rounded-full w-14 h-14 flex items-center justify-center text-white transition-all duration-300 z-10"
+            >
+              <X className="w-7 h-7" />
+            </button>
+            <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 bg-black/70 text-white px-8 py-3 rounded-full text-lg font-semibold">
+              {selectedIndex! + 1} / 10
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
