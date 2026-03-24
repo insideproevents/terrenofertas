@@ -167,17 +167,47 @@ setSelectedIndex((prev) => (prev! < 8 ? prev! + 1 : 0));
             </h2>
           </div>
 
-          {/* Images row */}
-          <div className="flex flex-col lg:flex-row gap-8 mb-16">
-            <img 
-              src="/rivera-coigues/caracteristicas.png"
-              alt="Características"
-              className="flex-1 w-[40%] max-w-[40%] mx-auto lg:max-w-none object-contain rounded-lg shadow-2xl bg-white p-4"
-            />
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {/* Caracteristicas cards */}
+            <div className="flex flex-col gap-6 bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 h-[480px] justify-between">
+              <div className="grid grid-cols-2 gap-4 flex-1">
+                <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                  <Trees className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
+                  <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">33</div>
+                  <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Hectáreas de Superficie Total</div>
+                </div>
+                <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                  <LandPlot className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
+                  <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">64</div>
+                  <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Parcelas con Rol Propio</div>
+                </div>
+                <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                  <River className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
+                  <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">9</div>
+                  <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Terrenos Orilla Río</div>
+                </div>
+                <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                  <Droplets className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
+                  <div className="font-display text-lg font-bold text-[#0a3d4a] mb-1">500 mt</div>
+                  <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Orilla Río Cóndor</div>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gradient-to-br from-[#5bc0de]/20 to-[#0a3d4a]/20 rounded-xl p-4 text-center border border-white/30 hover:bg-[#5bc0de]/30 transition-all duration-300">
+                  <Mountain className="w-8 h-8 text-[#5bc0de] mx-auto mb-1" />
+                  <div className="text-xs uppercase tracking-wider text-white/90 font-semibold">Paisajes Increíbles</div>
+                </div>
+                <div className="bg-gradient-to-br from-[#5bc0de]/20 to-[#0a3d4a]/20 rounded-xl p-4 text-center border border-white/30 hover:bg-[#5bc0de]/30 transition-all duration-300">
+                  <Shield className="w-8 h-8 text-[#5bc0de] mx-auto mb-1" />
+                  <div className="text-xs uppercase tracking-wider text-white/90 font-semibold">Biodiversidad Protegida</div>
+                </div>
+              </div>
+            </div>
+            {/* Forest image */}
             <img 
               src="/rivera-coigues/forest.jpg"
               alt="Bosque Nativo"
-              className="flex-1 w-[60%] max-w-[60%] mx-auto lg:max-w-none object-contain rounded-lg shadow-2xl bg-white p-4"
+              className="w-full h-[480px] object-cover rounded-2xl shadow-2xl"
             />
           </div>
 
