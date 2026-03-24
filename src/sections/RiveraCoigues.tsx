@@ -177,7 +177,7 @@ setSelectedIndex((prev) => (prev! < 8 ? prev! + 1 : 0));
             <img 
               src="/rivera-coigues/forest.jpg"
               alt="Bosque Nativo"
-              className="flex-1 max-w-md mx-auto lg:max-w-none object-contain rounded-lg shadow-2xl bg-white p-4"
+              className="flex-1 w-[60%] max-w-[60%] mx-auto lg:max-w-none object-contain rounded-lg shadow-2xl bg-white p-4"
             />
           </div>
 
