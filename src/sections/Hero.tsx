@@ -60,7 +60,7 @@ const Hero = () => {
         {/* Winner Image */}
         <div className="hidden lg:flex shrink-0">
           <img 
-            src="/rivera-coigues/winner.png" 
+            src="/winner.png" 
             alt="Winner Award"
             className="w-32 h-32 lg:w-40 lg:h-40 object-contain drop-shadow-2xl bg-white/10 backdrop-blur-xl rounded-2xl p-4 border border-white/20 hover:scale-105 transition-all duration-500 z-20"
           />
