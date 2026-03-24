@@ -341,9 +341,9 @@ setSelectedIndex((prev) => (prev! < 8 ? prev! + 1 : 0));
           onClick={() => setSelectedIndex(null)}
         />
         <DialogContent className="p-0 m-0 border-none shadow-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 z-[9999] fixed inset-0 w-screen h-screen max-w-none max-h-none bg-transparent">
-className="min-h-screen flex items-center justify-center p-4 relative"
+<div className="min-h-screen flex items-center justify-center p-4 relative">
             <button
-              onClick={() => setSelectedIndex(prev => prev! > 0 ? prev! - 1 : 9)}
+onClick={() => setSelectedIndex(prev => prev! > 0 ? prev! - 1 : 8)}
               className="absolute left-12 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 rounded-full w-14 h-14 flex items-center justify-center text-white transition-all duration-300 z-10"
             >
               <ChevronLeft className="w-7 h-7" />
@@ -351,7 +351,7 @@ className="min-h-screen flex items-center justify-center p-4 relative"
             <img
               src={`/rivera-coigues/galeria/los_coigues_${selectedIndex! + 1}.jpg`}
               alt={`Imagen ${selectedIndex! + 1}`}
-className="w-full h-full max-w-[95vw] max-h-[95vh] object-contain p-4 sm:p-8 md:p-12 lg:p-16 flex items-center justify-center"
+className="w-full h-full max-w-[95vw] max-h-[95vh] object-contain p-4 sm:p-8 md:p-12 lg:p-16 mx-auto"
             />
             <button
               onClick={() => setSelectedIndex(prev => prev! < 9 ? prev! + 1 : 0)}
@@ -365,8 +365,8 @@ className="w-full h-full max-w-[95vw] max-h-[95vh] object-contain p-4 sm:p-8 md:
             >
               <X className="w-7 h-7" />
             </button>
-className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black/70 text-white px-6 py-2 rounded-full text-sm sm:text-base font-semibold drop-shadow-lg">
- {selectedIndex! + 1} / 9
+<div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black/70 text-white px-6 py-2 rounded-full text-sm sm:text-base font-semibold drop-shadow-lg">
+              {selectedIndex! + 1} / 9
             </div>
           </div>
         </DialogContent>
