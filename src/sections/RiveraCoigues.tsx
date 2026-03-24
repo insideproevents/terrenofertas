@@ -172,7 +172,7 @@ setSelectedIndex((prev) => (prev! < 8 ? prev! + 1 : 0));
             <img 
               src="/rivera-coigues/caracteristicas.png"
               alt="Características"
-              className="flex-1 max-w-md mx-auto lg:max-w-none object-contain rounded-lg shadow-2xl bg-white p-4"
+              className="flex-1 w-[40%] max-w-[40%] mx-auto lg:max-w-none object-contain rounded-lg shadow-2xl bg-white p-4"
             />
             <img 
               src="/rivera-coigues/forest.jpg"
