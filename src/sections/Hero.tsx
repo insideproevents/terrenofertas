@@ -62,11 +62,12 @@ const Hero = () => {
           <img 
             src="/winner.png" 
             alt="Winner Award"
-            className="w-32 h-32 lg:w-40 lg:h-40 object-contain drop-shadow-2xl bg-white/10 backdrop-blur-xl rounded-2xl p-4 border border-white/20 hover:scale-105 transition-all duration-500 z-20"
+            className="w-24 h-24 lg:w-32 lg:h-32 object-contain drop-shadow-2xl hover:scale-110 transition-all duration-500 z-30 absolute left-1/2 -translate-x-1/2 -top-12 lg:-top-16"
           />
         </div>
         {/* Text Content */}
-        <div className="flex-1 text-center lg:text-left">
+        <div className="flex-1 text-center lg:text-left w-full">
+
 
         {/* Year Badge */}
         <div
