@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+stiimport { useEffect, useRef, useState } from 'react';
 import { MapPin, Send, ChevronDown, Trees, Droplets, Route, Shield, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -165,6 +165,20 @@ setSelectedIndex((prev) => (prev! < 8 ? prev! + 1 : 0));
             <h2 className="font-display text-4xl md:text-5xl text-white">
               Características que <span className="italic text-[#5bc0de]">Hacen la Diferencia</span>
             </h2>
+          </div>
+
+          {/* Images row */}
+          <div className="flex gap-8 mb-16 lg:flex-row flex-col">
+            <img 
+              src="/rivera-coigues/caracteristicas.png"
+              alt="Características"
+              className="flex-1 max-h-[400px] object-cover rounded-lg shadow-2xl"
+            />
+            <img 
+              src="/rivera-coigues/forest.jpg"
+              alt="Bosque Nativo"
+              className="flex-1 max-h-[400px] object-cover rounded-lg shadow-2xl"
+            />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
