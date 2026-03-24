@@ -55,21 +55,19 @@ const Hero = () => {
       <div className="absolute inset-0 mist-overlay animate-mist" />
 
       {/* Content */}
-      <div className="relative z-10 flex items-center px-6 max-w-6xl mx-auto gap-12 lg:gap-20">
-
+      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center px-6 max-w-6xl mx-auto gap-12 lg:gap-20">
+        
         {/* Winner Image */}
-        {/* Winner Image */}
-        <div className="hidden lg:flex w-40 shrink-0">
+        <div className="hidden lg:flex order-2 w-40 shrink-0 self-start ml-auto">
           <img 
             src="/winner.png" 
             alt="Winner Award"
             className="w-28 h-28 object-contain drop-shadow-2xl hover:scale-105 transition-all duration-500"
           />
         </div>
+        
         {/* Text Content */}
-        <div className="flex-1 text-center lg:text-left">
-
-
+        <div className="flex-1 text-center max-w-4xl order-1 lg:order-none">
 
         {/* Year Badge */}
         <div
@@ -80,6 +78,7 @@ const Hero = () => {
             Patagonia Select 2026
           </span>
         </div>
+
 
 
         {/* Main Title */}
