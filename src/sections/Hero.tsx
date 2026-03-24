@@ -115,12 +115,13 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Winner Image - Larger absolute positioned */}
+        {/* Winner Image - 70% size, left side */}
         <img 
           src="/winner.png" 
           alt="Winner Award"
-          className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2 w-36 h-36 lg:w-48 lg:h-48 xl:w-56 xl:h-56 object-contain drop-shadow-2xl z-20 pointer-events-none"
+          className="hidden lg:block absolute left-8 top-1/2 -translate-y-1/2 w-[28px] h-[28px] lg:w-[39px] lg:h-[39px] xl:w-[46px] xl:h-[46px] object-contain drop-shadow-2xl z-20 pointer-events-none"
         />
+
       </div>
 
       {/* Scroll Indicator */}
