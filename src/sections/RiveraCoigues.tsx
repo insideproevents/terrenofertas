@@ -341,5 +341,3 @@ setSelectedIndex((prev) => (prev! < 8 ? prev! + 1 : 0));
 
 export default RiveraCoigues;
 
-
-export default RiveraCoigues;
