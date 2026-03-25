@@ -145,56 +145,11 @@ const RiveraCoigues = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {/* Caracteristicas cards */}
-            <div className="flex flex-col gap-6 bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 h-[480px] justify-between">
-              <div className="grid grid-cols-2 gap-4 flex-1">
-                <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-                  <Trees className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
-                  <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">33</div>
-                  <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Hectáreas de Superficie Total</div>
-                </div>
-                <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-
-
-
-
-                  <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">64</div>
-                  <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Parcelas con Rol Propio</div>
-                </div>
-                <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-
-
-
-
-                  <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">9</div>
-                  <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Terrenos Orilla Río</div>
-                </div>
-                <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-
-
-                  <div className="font-display text-lg font-bold text-[#0a3d4a] mb-1">500 mt</div>
-                  <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Orilla Río Cóndor</div>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gradient-to-br from-[#5bc0de]/20 to-[#0a3d4a]/20 rounded-xl p-4 text-center border border-white/30 hover:bg-[#5bc0de]/30 transition-all duration-300">
-
-
-
-
-                  <div className="text-xs uppercase tracking-wider text-white/90 font-semibold">Paisajes Increíbles</div>
-                </div>
-                <div className="bg-gradient-to-br from-[#5bc0de]/20 to-[#0a3d4a]/20 rounded-xl p-4 text-center border border-white/30 hover:bg-[#5bc0de]/30 transition-all duration-300">
-
-
-                  <div className="text-xs uppercase tracking-wider text-white/90 font-semibold">Biodiversidad Protegida</div>
-                </div>
-              </div>
-            </div>
+          <div className="grid lg:grid-cols-2 gap-8">
             {/* Forest image */}
-            <img src="/rivera-coigues/forest.jpg" alt="Bosque Nativo" className="w-full h-[480px] object-cover rounded-2xl shadow-2xl" />
+            <img src="/rivera-coigues/forest.jpg" alt="Bosque Nativo" className="w-full h-[480px] lg:h-[600px] object-cover rounded-2xl shadow-2xl col-span-1 lg:col-span-2 mb-16" />
             {[
+
               {
                 icon: Trees,
                 title: 'Bosque Nativo Protegido',
@@ -242,9 +197,59 @@ const RiveraCoigues = () => {
         </div>
       </section>
 
+      {/* Precios Section */}
+      <section 
+        id="precios"
+        className="py-24 lg:py-32 bg-[#e8f4f8]"
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Invertir</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+              Oportunidades <span className="italic text-[#5bc0de]">| Precios</span>
+            </h2>
+          </div>
+          <div className="flex flex-col gap-6 bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-[#0a3d4a]/20 mx-auto max-w-4xl">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                <Trees className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
+                <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">33</div>
+                <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Hectáreas Totales</div>
+              </div>
+              <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                <Droplets className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
+                <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">64</div>
+                <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Parcelas Disponibles</div>
+              </div>
+              <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                <Route className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
+                <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">9</div>
+                <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Frente Río</div>
+              </div>
+              <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                <Shield className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
+                <div className="font-display text-lg font-bold text-[#0a3d4a] mb-1">500m</div>
+                <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Línea Costera</div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-gradient-to-br from-[#5bc0de]/30 to-[#0a3d4a]/30 rounded-xl p-6 text-center border border-white/30 hover:from-[#5bc0de]/50 transition-all duration-300">
+                <div className="text-xl uppercase tracking-wider text-white font-semibold mb-2">Desde</div>
+                <div className="font-display text-4xl font-bold text-white">$6.990.000</div>
+              </div>
+              <div className="bg-gradient-to-br from-emerald-500/30 to-emerald-600/30 rounded-xl p-6 text-center border border-white/30 hover:from-emerald-500/50 transition-all duration-300">
+                <div className="text-xl uppercase tracking-wider text-white font-semibold mb-2">Financiamiento</div>
+                <div className="font-display text-xl font-bold text-white">Hasta 24 meses</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section 
         id="galeria"
+
         className="py-24 lg:py-32 bg-[#e8f4f8]"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
