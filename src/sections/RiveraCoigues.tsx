@@ -209,38 +209,35 @@ const RiveraCoigues = () => {
               Oportunidades <span className="italic text-[#5bc0de]">| Precios</span>
             </h2>
           </div>
-          <div className="flex flex-col gap-6 bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-[#0a3d4a]/20 mx-auto max-w-4xl">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-                <Trees className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
-                <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">33</div>
-                <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Hectáreas Totales</div>
-              </div>
-              <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-                <Droplets className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
-                <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">64</div>
-                <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Parcelas Disponibles</div>
-              </div>
-              <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-                <Route className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
-                <div className="font-display text-2xl font-bold text-[#0a3d4a] mb-1">9</div>
-                <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Frente Río</div>
-              </div>
-              <div className="bg-white/80 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-                <Shield className="w-12 h-12 text-[#0a3d4a] mx-auto mb-3" />
-                <div className="font-display text-lg font-bold text-[#0a3d4a] mb-1">500m</div>
-                <div className="text-sm text-[#0a3d4a]/80 uppercase tracking-wide">Línea Costera</div>
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            {/* Tarjeta 1: Terrenos Interiores */}
+            <div className="bg-gradient-to-br from-[#0a3d4a] to-[#5bc0de]/50 rounded-3xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border border-white/20">
+              <h3 className="font-display text-2xl lg:text-3xl font-bold mb-4 text-center">Terrenos Interiores</h3>
+              <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-2">desde</div>
+              <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-6">$6.990.000</div>
+              <div className="text-xl font-bold text-center mb-2">Cuota desde</div>
+              <div className="text-2xl font-display font-bold text-center mb-4">$291.000/mes</div>
+              <div className="text-lg font-bold text-center text-emerald-400">$3.000.000 dcto.</div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gradient-to-br from-[#5bc0de]/30 to-[#0a3d4a]/30 rounded-xl p-6 text-center border border-white/30 hover:from-[#5bc0de]/50 transition-all duration-300">
-                <div className="text-xl uppercase tracking-wider text-white font-semibold mb-2">Desde</div>
-                <div className="font-display text-4xl font-bold text-white">$6.990.000</div>
-              </div>
-              <div className="bg-gradient-to-br from-emerald-500/30 to-emerald-600/30 rounded-xl p-6 text-center border border-white/30 hover:from-emerald-500/50 transition-all duration-300">
-                <div className="text-xl uppercase tracking-wider text-white font-semibold mb-2">Financiamiento</div>
-                <div className="font-display text-xl font-bold text-white">Hasta 24 meses</div>
-              </div>
+
+            {/* Tarjeta 2: Terrenos Orilla de río */}
+            <div className="bg-gradient-to-br from-[#0a3d4a] to-[#5bc0de]/30 rounded-3xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border border-white/20">
+              <h3 className="font-display text-2xl lg:text-3xl font-bold mb-4 text-center">Terrenos Orilla de río</h3>
+              <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-2">desde</div>
+              <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-6">$14.990.000</div>
+              <div className="text-xl font-bold text-center mb-2">Cuota desde</div>
+              <div className="text-2xl font-display font-bold text-center mb-4">$625.000/mes</div>
+              <div className="text-lg font-bold text-center text-emerald-400">$3.000.000 dcto.</div>
+            </div>
+
+            {/* Tarjeta 3: Terrenos Orilla de camino */}
+            <div className="bg-gradient-to-br from-[#0a3d4a] to-[#5bc0de]/20 rounded-3xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border border-white/20">
+              <h3 className="font-display text-2xl lg:text-3xl font-bold mb-4 text-center">Terrenos Orilla de camino</h3>
+              <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-2">desde</div>
+              <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-6">$10.990.000</div>
+              <div className="text-xl font-bold text-center mb-2">Cuota desde</div>
+              <div className="text-2xl font-display font-bold text-center mb-4">$458.000/mes</div>
+              <div className="text-lg font-bold text-center text-emerald-400">$3.000.000 dcto.</div>
             </div>
           </div>
         </div>
