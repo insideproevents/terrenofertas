@@ -181,9 +181,7 @@ const RiveraCoigues = () => {
               ].map((feature, index) => (
                 <div 
                   key={index}
-                  className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:bg-white/10 transition-all duration-500 ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                  }`}
+className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:bg-white/10 transition-all duration-500 opacity-100 translate-y-0 visible opacity-100 !important`}
                   style={{ transitionDelay: `${index * 100}ms` }}
                 >
                   <feature.icon className="w-12 h-12 text-[#5bc0de] mb-6" />
