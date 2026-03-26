@@ -270,24 +270,27 @@ className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg ho
         </div>
       </section>
 
-      {/* Master Plan */}
-      <section className="py-24 lg:py-32 bg-[#e8f4f8]"> 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Proyecto</p>
-            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
-              Master <span className="italic text-[#5bc0de]">Plan</span>
-            </h2>
-          </div>
-          <div className="relative">
-            <img
-              src="https://kimi-web-img.moonshot.cn/img/elements-resized.envatousercontent.com/ed69504d6723c40b6f8a2a175679f203f6dd41b7.jpg"
-              alt="Master Plan"
-              className="w-full rounded-lg shadow-2xl"
-            />
-          </div>
-        </div>
-      </section>
+{/* Master Plan */}
+       <section className="py-24 lg:py-32 bg-[#e8f4f8]"> 
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-16">
+             <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Proyecto</p>
+             <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+               Master <span className="italic text-[#5bc0de]">Plan</span>
+             </h2>
+           </div>
+           <div className="relative">
+             <div className="et_pb_code_inner">
+               <iframe 
+                 loading="lazy"
+                 width="1500" 
+                 height="600" 
+                 src="https://digitaldesign.cl/360/Rio_Condor2/tour.html"
+               />
+             </div>
+           </div>
+         </div>
+       </section>
 
       {/* Contact Form */}
       <section id="contacto" className="py-24 lg:py-32 bg-[#e8f4f8]">
