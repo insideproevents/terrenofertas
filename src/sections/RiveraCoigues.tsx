@@ -147,34 +147,39 @@ const RiveraCoigues = () => {
       <div className="flex flex-col h-full justify-between space-y-6 pr-4">
         {[
           {
-            icon: Trees,
-            title: 'Bosque Nativo Protegido',
-            description: 'Más de 20 hectáreas de bosque nativo protegido permanentemente, con senderos para caminar y conectar con la naturaleza.'
-          },
-          {
-            icon: Droplets,
-            title: 'Ribera al Río Cóndor',
-            description: 'Más de 500 metros de ribera directa al Río Cóndor, donde podrás disfrutar de la fauna y flora acuática.'
-          },
-          {
-            icon: Route,
-            title: 'Caminos Integrados',
-            description: 'Caminos internos diseñados para mimetizarse con el paisaje, transitables todo el año.'
-          },
-          {
-            icon: Shield,
-            title: 'Seguridad 24/7',
-            description: 'Acceso controlado con vigilancia permanente y cercado perimetral para tu tranquilidad.'
-          },
-          {
-            icon: Check,
-            title: 'Titreentes Listos para Construir',
-            description: 'Todos los terrains cuentan con agua potable, electricidad y conexión a internet disponibles.'
+            icon: MapPin,
+            title: '33',
+            description: 'Hectáreas de superficie total'
           },
           {
             icon: MapPin,
-            title: 'Ubicación Privilegiada',
-            description: 'A solo 45 minutos de Puerto Varas, con acceso pavimentado durante todo el año.'
+            title: '64',
+            description: 'Parcelas\nTodas con Rol propio'
+          },
+          {
+            icon: Droplets,
+            title: '9',
+            description: 'Terrenos\ncon acceso a orilla Río Cóndor'
+          },
+          {
+            icon: Droplets,
+            title: '500 mt',
+            description: 'de Orilla del Río Cóndor'
+          },
+          {
+            icon: Trees,
+            title: '',
+            description: 'Paisajes increíbles entre humedales, cascadas, arroyos, vertientes, playa y rápidos'
+          },
+          {
+            icon: Shield,
+            title: '',
+            description: 'Biodiversidad protegida, diseño consciente'
+          },
+          {
+            icon: MapPin,
+            title: '50 min',
+            description: 'de Puerto Aysén. Acceso todo el año'
           }
         ].map((feature, index) => (
           <div 
@@ -183,8 +188,8 @@ const RiveraCoigues = () => {
             style={{ transitionDelay: `${index * 100}ms` }}
           >
             <feature.icon className="w-12 h-12 text-[#5bc0de] mb-6" />
-            <h3 className="font-display text-xl text-white mb-4">{feature.title}</h3>
-            <p className="text-white/70 leading-relaxed">{feature.description}</p>
+            {feature.title ? <h3 className="font-display text-3xl text-white mb-2">{feature.title}</h3> : null}
+            <p className="text-white/70 leading-relaxed text-center">{feature.description}</p>
           </div>
         ))}
       </div>
