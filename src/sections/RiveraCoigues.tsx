@@ -143,53 +143,56 @@ const RiveraCoigues = () => {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            <div className="space-y-6 pr-4">
-              {[
-                {
-                  icon: Trees,
-                  title: 'Bosque Nativo Protegido',
-                  description: 'Más de 20 hectáreas de bosque nativo protegido permanentemente, con senderos para caminar y conectar con la naturaleza.'
-                },
-                {
-                  icon: Droplets,
-                  title: 'Ribera al Río Cóndor',
-                  description: 'Más de 500 metros de ribera directa al Río Cóndor, donde podrás disfrutar de la fauna y flora acuática.'
-                },
-                {
-                  icon: Route,
-                  title: 'Caminos Integrados',
-                  description: 'Caminos internos diseñados para mimetizarse con el paisaje, transitables todo el año.'
-                },
-                {
-                  icon: Shield,
-                  title: 'Seguridad 24/7',
-                  description: 'Acceso controlado con vigilancia permanente y cercado perimetral para tu tranquilidad.'
-                },
-                {
-                  icon: Check,
-                  title: 'Titreentes Listos para Construir',
-                  description: 'Todos los terrains cuentan con agua potable, electricidad y conexión a internet disponibles.'
-                },
-                {
-                  icon: MapPin,
-                  title: 'Ubicación Privilegiada',
-                  description: 'A solo 45 minutos de Puerto Varas, con acceso pavimentado durante todo el año.'
-                }
-              ].map((feature, index) => (
-                <div 
-                  key={index}
-className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:bg-white/10 transition-all duration-500 opacity-100 translate-y-0 visible opacity-100 !important`}
-                  style={{ transitionDelay: `${index * 100}ms` }}
-                >
-                  <feature.icon className="w-12 h-12 text-[#5bc0de] mb-6" />
-                  <h3 className="font-display text-xl text-white mb-4">{feature.title}</h3>
-                  <p className="text-white/70 leading-relaxed">{feature.description}</p>
-                </div>
-              ))}
-            </div>
-            <img src="/rivera-coigues/forest.jpg" alt="Bosque Nativo" className="w-full h-[480px] lg:h-[600px] object-cover rounded-2xl shadow-2xl" />
+<div className="grid lg:grid-cols-2 gap-8">
+      <div className="space-y-6 pr-4">
+        {[
+          {
+            icon: Trees,
+            title: 'Bosque Nativo Protegido',
+            description: 'Más de 20 hectáreas de bosque nativo protegido permanentemente, con senderos para caminar y conectar con la naturaleza.'
+          },
+          {
+            icon: Droplets,
+            title: 'Ribera al Río Cóndor',
+            description: 'Más de 500 metros de ribera directa al Río Cóndor, donde podrás disfrutar de la fauna y flora acuática.'
+          },
+          {
+            icon: Route,
+            title: 'Caminos Integrados',
+            description: 'Caminos internos diseñados para mimetizarse con el paisaje, transitables todo el año.'
+          },
+          {
+            icon: Shield,
+            title: 'Seguridad 24/7',
+            description: 'Acceso controlado con vigilancia permanente y cercado perimetral para tu tranquilidad.'
+          },
+          {
+            icon: Check,
+            title: 'Titreentes Listos para Construir',
+            description: 'Todos los terrains cuentan con agua potable, electricidad y conexión a internet disponibles.'
+          },
+          {
+            icon: MapPin,
+            title: 'Ubicación Privilegiada',
+            description: 'A solo 45 minutos de Puerto Varas, con acceso pavimentado durante todo el año.'
+          }
+        ].map((feature, index) => (
+          <div 
+            key={index}
+          className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:bg-white/10 transition-all duration-500 opacity-100 translate-y-0 visible opacity-100 !important`}
+            style={{ transitionDelay: `${index * 100}ms` }}
+          >
+            <feature.icon className="w-12 h-12 text-[#5bc0de] mb-6" />
+            <h3 className="font-display text-xl text-white mb-4">{feature.title}</h3>
+            <p className="text-white/70 leading-relaxed">{feature.description}</p>
           </div>
+        ))}
+      </div>
+      <div className="space-y-4">
+        <img src="/rivera-coigues/caract_1.jpg" alt="Característica 1" className="w-full h-[480px] lg:h-[600px] object-cover rounded-2xl shadow-2xl" />
+        <img src="/rivera-coigues/caract_2.jpg" alt="Característica 2" className="w-full h-[480px] lg:h-[600px] object-cover rounded-2xl shadow-2xl" />
+      </div>
+    </div>
         </div>
       </section>
 
