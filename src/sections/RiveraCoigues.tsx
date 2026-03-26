@@ -143,7 +143,7 @@ const RiveraCoigues = () => {
             </h2>
           </div>
 
-<div className="grid lg:grid-cols-2 gap-8">
+<div className="grid lg:grid-cols-2 gap-8 items-start">
       <div className="flex flex-col h-full justify-between space-y-6 pr-4">
         {[
           {
@@ -188,7 +188,7 @@ const RiveraCoigues = () => {
           </div>
         ))}
       </div>
-      <div className="space-y-4">
+      <div className="flex flex-col h-full justify-between space-y-4">
         <img src="/rivera-coigues/caract_1.jpg" alt="Característica 1" className="w-full h-[480px] lg:h-[600px] object-cover rounded-2xl shadow-2xl" />
         <img src="/rivera-coigues/caract_2.jpg" alt="Característica 2" className="w-full h-[480px] lg:h-[600px] object-cover rounded-2xl shadow-2xl" />
       </div>
