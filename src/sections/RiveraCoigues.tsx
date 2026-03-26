@@ -144,7 +144,7 @@ const RiveraCoigues = () => {
           </div>
 
 <div className="grid lg:grid-cols-2 gap-8">
-      <div className="space-y-6 pr-4">
+      <div className="flex flex-col h-full justify-between space-y-6 pr-4">
         {[
           {
             icon: Trees,
