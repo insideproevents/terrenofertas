@@ -187,14 +187,14 @@ const RiveraCoigues = () => {
             description: 'Todos los terrenos cuentan con agua potable, electricidad y conexión a internet disponibles.'
           }
         ].map((feature, index) => (
-          <div 
+           <div 
             key={index}
-          className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:bg-white/10 transition-all duration-500 opacity-100 translate-y-0 visible opacity-100 !important`}
+          className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:bg-white/10 transition-all duration-500 opacity-100 translate-y-0 visible opacity-100 text-center !important`}
             style={{ transitionDelay: `${index * 100}ms` }}
           >
             <feature.icon className="w-12 h-12 text-[#5bc0de] mb-6" />
             {feature.title ? <h3 className="font-display text-3xl text-white mb-2">{feature.title}</h3> : null}
-            <p className="text-white/70 leading-relaxed text-center">{feature.description}</p>
+            <p className="text-white/70 leading-relaxed">{feature.description}</p>
           </div>
         ))}
       </div>
