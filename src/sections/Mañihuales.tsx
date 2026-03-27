@@ -204,6 +204,36 @@ const Mañihuales = () => {
         </div>
       </section>
 
+      {/* Gallery Section */}
+      <section className="py-24 lg:py-32 bg-[#e8f4f8]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Galería</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+              Galería <span className="italic text-[#5bc0de]">Mañihuales</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {Array.from({ length: 18 }, (_, i) => {
+              const num = String(i + 1).padStart(3, '0');
+              return (
+                <div
+                  key={num}
+                  className="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                >
+                  <img
+                    src={`/mañihuales/Mañihuales_${num}.jpg`}
+                    alt={`Mañihuales ${num}`}
+                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form */}
       <section id="contacto" className="py-24 lg:py-32 bg-[#e8f4f8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
