@@ -56,8 +56,7 @@ const Mañihuales = () => {
             <span className="italic text-[#5bc0de]">Mañihuales</span>
           </h1>
           <p className="text-lg md:text-xl font-light mb-4 max-w-2xl mx-auto leading-relaxed text-white/90">
-            Tierras productivas en el corazón de la Patagonia chilena. 
-            Praderas ideales para agricultura, ganadería y proyectos de turismo rural.
+            Un lugar único, inmerso en la naturaleza, rodeado de reservas y paisajes que inspiran. Con una ubicación privilegiada junto al Río Mañihuales y la icónica Carretera Austral.
           </p>
           <div className="mt-10">
             <p className="text-sm uppercase tracking-[0.2em] mb-2 text-white/70">Desde</p>
