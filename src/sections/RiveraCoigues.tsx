@@ -44,7 +44,7 @@ const RiveraCoigues = () => {
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
 <div 
   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: 'url(/ribera-coigues/portada_coigues.webp)' }}
+  style={{ backgroundImage: 'url(/rivera-coigues/portada_coigues.webp)' }}
 >
           <div className="absolute inset-0 bg-gradient-to-b from-[#0a3d4a]/60 via-[#0a3d4a]/40 to-[#0a3d4a]/70" />
         </div>
