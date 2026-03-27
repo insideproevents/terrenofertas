@@ -181,10 +181,10 @@ const RiveraCoigues = () => {
             title: '50 min',
             description: 'de Puerto Aysén. Acceso todo el año'
           },
-          {
+           {
             icon: Check,
-            title: 'Terrenos Listos para Construir',
-            description: 'Todos los terrenos cuentan con agua potable, electricidad y conexión a internet disponibles.'
+            title: 'Vive y disfruta la naturaleza',
+            description: 'en un proyecto único'
           }
         ].map((feature, index) => (
            <div 
