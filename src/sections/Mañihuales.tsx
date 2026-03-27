@@ -131,11 +131,12 @@ const Mañihuales = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section 
-        id="caracteristicas"
-        className="py-24 lg:py-32 bg-[#0a3d4a]"
-      >
+       {/* Features Section */}
+       <section 
+         id="caracteristicas"
+         ref={sectionRef}
+         className="py-24 lg:py-32 bg-[#0a3d4a]"
+       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-xs uppercase tracking-[0.3em] text-[#5bc0de] mb-4">¿Por Qué Elegirnos?</p>
