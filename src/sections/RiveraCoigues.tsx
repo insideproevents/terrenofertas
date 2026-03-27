@@ -220,7 +220,7 @@ const RiveraCoigues = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {/* Tarjeta 1: Terrenos Interiores */}
-            <div className="bg-gradient-to-br from-[#0a3d4a] to-[#5bc0de]/50 rounded-3xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border border-white/20">
+            <div className="bg-[#0a3d4a] rounded-3xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border border-white/20">
               <h3 className="font-display text-2xl lg:text-3xl font-bold mb-4 text-center">Terrenos Interiores</h3>
               <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-2">desde</div>
               <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-6">$6.990.000</div>
@@ -230,7 +230,7 @@ const RiveraCoigues = () => {
             </div>
 
             {/* Tarjeta 2: Terrenos Orilla de río */}
-            <div className="bg-gradient-to-br from-[#0a3d4a] to-[#5bc0de]/30 rounded-3xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border border-white/20">
+            <div className="bg-[#0a3d4a] rounded-3xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border border-white/20">
               <h3 className="font-display text-2xl lg:text-3xl font-bold mb-4 text-center">Terrenos Orilla de río</h3>
               <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-2">desde</div>
               <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-6">$14.990.000</div>
@@ -240,7 +240,7 @@ const RiveraCoigues = () => {
             </div>
 
             {/* Tarjeta 3: Terrenos Orilla de camino */}
-            <div className="bg-gradient-to-br from-[#0a3d4a] to-[#5bc0de]/20 rounded-3xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border border-white/20">
+            <div className="bg-[#0a3d4a] rounded-3xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border border-white/20">
               <h3 className="font-display text-2xl lg:text-3xl font-bold mb-4 text-center">Terrenos Orilla de camino</h3>
               <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-2">desde</div>
               <div className="text-4xl lg:text-5xl font-display font-bold text-center mb-6">$10.990.000</div>
