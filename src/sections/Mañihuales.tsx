@@ -197,6 +197,25 @@ const Mañihuales = () => {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-24 lg:py-32 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Video</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+              Conoce <span className="italic text-[#5bc0de]">Praderas de Mañihuales</span>
+            </h2>
+          </div>
+          <div className="flex justify-center">
+            <video
+              controls
+              className="rounded-lg shadow-2xl w-full"
+              src="/mañihuales/manihuales-web.mp4"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section className="py-24 lg:py-32 bg-[#e8f4f8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
