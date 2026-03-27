@@ -91,29 +91,17 @@ const Mañihuales = () => {
               </h2>
               <div className="space-y-6 text-[#0a3d4a]/80 leading-relaxed">
                 <p>
-                  <strong className="text-[#0a3d4a]">Mañihuales</strong> es una oportunidad única de 
-                  adquirir tierras productivas en una de las regiones más privilegiadas de Chile. 
-                  Con más de{' '}
-                  <strong className="text-[#0a3d4a]">500 hectáreas de praderas naturales</strong>, 
-                  este territorio ofrece condiciones ideales para desarrollo agrícola, ganadero 
-                  y proyectos de turismo experiential.
+                  <strong className="text-[#0a3d4a]">Praderas de Mañihuales</strong> es el lugar perfecto que está buscando al momento de pensar en inversión y conservación, y disfrutar de él desde el primer día.
                 </p>
                 <p>
-                  Ubicado en la región de Aysén, este proyecto representa la última frontera 
-                  agrícola de Chile: tierra fértil, agua abundante, y un ecosistema prístino 
-                  que permite múltiples usos productivos. Una inversión con potencial de 
-                 plusvalía excepcional en una zona en desarrollo.
+                  Está estratégicamente ubicado a tan sólo 20 minutos de la ciudad de Puerto Aysén y sólo 15 minutos de pueblo Villa Mañihuales, donde encontrarás todo lo necesario para abastecerte.
                 </p>
                 <p>
-                  La propiedad cuenta con{' '}
-                  <strong className="text-[#0a3d4a]">acceso por camino pavimentado</strong>, 
-                  agua de calidad y energía eléctrica disponible. Ideal para quienes buscan 
-                  establecer un proyecto productivo sostenible en el tiempo.
+                  ¿Porque <strong className="text-[#0a3d4a]">Praderas de Mañihuales</strong>?, en este proyecto podrás acceder de manera directa a través de la ruta 7 más conocida como la famosa carretera austral.
                 </p>
-              </div>
-              <div className="mt-8 flex items-center gap-2">
-                <div className="w-12 h-[2px] bg-[#5bc0de]" />
-                <span className="text-sm text-[#0a3d4a]/60 uppercase tracking-wider">Producción sostenible, inversión segura</span>
+                <p>
+                  Las características de los terrenos en <strong className="text-[#0a3d4a]">Praderas de Mañihuales</strong> son planos, aprovechables, rodeado de zonas de reservas naturales, donde podrá disfrutar de sus imponentes paisajes, zonas de área común acompañado de su tan conocido Río Mañihuales.
+                </p>
               </div>
             </div>
             <div className="relative">
@@ -235,6 +223,29 @@ const Mañihuales = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Master Plan Section */}
+      <section className="py-24 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Master Plan</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+              Master <span className="italic text-[#5bc0de]">Plan</span>
+            </h2>
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-2xl">
+            <iframe
+              width="100%"
+              height="600"
+              frameBorder="0"
+              scrolling="no"
+              allowFullScreen
+              src="https://www.lanube360.com/praderas-de-manihuales/"
+              title="Master Plan Praderas de Mañihuales"
+            />
           </div>
         </div>
       </section>
