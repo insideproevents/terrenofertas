@@ -145,61 +145,67 @@ const Mañihuales = () => {
             </h2>
           </div>
 
-           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-             {[
-               {
-                 icon: Trees,
-                 title: '23',
-                 description: 'Parcelas planas, con hermosos bosques'
-               },
-               {
-                 icon: Droplets,
-                 title: '8',
-                 description: 'Parcelas\nposeen acceso directo al Río Mañihuales'
-               },
-               {
-                 icon: MapPin,
-                 title: '',
-                 description: 'Acceso Directo a la Carretera Ruta Austral'
-               },
-               {
-                 icon: Droplets,
-                 title: '1.5 Km',
-                 description: 'de Orilla del Río Mañihuales'
-               },
-               {
-                 icon: Droplets,
-                 title: '',
-                 description: 'Parcelas con factibilidad de agua'
-               },
-               {
-                 icon: Trees,
-                 title: '',
-                 description: 'Zonas de Área Común, para disfrutar la naturaleza'
-               },
-               {
-                 icon: MapPin,
-                 title: '20 min / 15 min',
-                 description: 'A 20 minutos de Puerto Aysén y 15 minutos del pueblo Villa Mañihuales'
-               },
-               {
-                 icon: Check,
-                 title: '',
-                 description: 'Terrenos con rol propio y aprobación del SAG'
-               }
-             ].map((feature, index) => (
-               <div 
-                 key={index}
-                 className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:bg-white/10 transition-all duration-500 ${
-                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                 } text-center !important`}
-                 style={{ transitionDelay: `${index * 100}ms` }}
-               >
-                 <feature.icon className="w-12 h-12 text-[#5bc0de] mb-6" />
-                 {feature.title ? <h3 className="font-display text-3xl text-white mb-2">{feature.title}</h3> : null}
-                 <p className="text-white/70 leading-relaxed">{feature.description}</p>
-               </div>
-             ))}
+           <div className="grid lg:grid-cols-2 gap-8">
+             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-full w-full">
+               {[
+                 {
+                   icon: Trees,
+                   title: '23',
+                   description: 'Parcelas planas, con hermosos bosques'
+                 },
+                 {
+                   icon: Droplets,
+                   title: '8',
+                   description: 'Parcelas\nposeen acceso directo al Río Mañihuales'
+                 },
+                 {
+                   icon: MapPin,
+                   title: '',
+                   description: 'Acceso Directo a la Carretera Ruta Austral'
+                 },
+                 {
+                   icon: Droplets,
+                   title: '1.5 Km',
+                   description: 'de Orilla del Río Mañihuales'
+                 },
+                 {
+                   icon: Droplets,
+                   title: '',
+                   description: 'Parcelas con factibilidad de agua'
+                 },
+                 {
+                   icon: Trees,
+                   title: '',
+                   description: 'Zonas de Área Común, para disfrutar la naturaleza'
+                 },
+                 {
+                   icon: MapPin,
+                   title: '20 min / 15 min',
+                   description: 'A 20 minutos de Puerto Aysén y 15 minutos del pueblo Villa Mañihuales'
+                 },
+                 {
+                   icon: Check,
+                   title: '',
+                   description: 'Terrenos con rol propio y aprobación del SAG'
+                 }
+               ].map((feature, index) => (
+                 <div 
+                   key={index}
+                   className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:bg-white/10 transition-all duration-500 ${
+                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                   } text-center !important`}
+                   style={{ transitionDelay: `${index * 100}ms` }}
+                 >
+                   <feature.icon className="w-12 h-12 text-[#5bc0de] mb-6" />
+                   {feature.title ? <h3 className="font-display text-3xl text-white mb-2">{feature.title}</h3> : null}
+                   <p className="text-white/70 leading-relaxed">{feature.description}</p>
+                 </div>
+               ))}
+             </div>
+             <div className="space-y-4">
+               <img src="/mañihuales/caracteristicas_1.jpg" alt="Característica 1" className="w-full h-[480px] lg:h-[600px] object-cover rounded-2xl shadow-2xl" />
+               <img src="/mañihuales/caracteristicas_2.jpg" alt="Característica 2" className="w-full h-[480px] lg:h-[600px] object-cover rounded-2xl shadow-2xl" />
+             </div>
            </div>
         </div>
       </section>
