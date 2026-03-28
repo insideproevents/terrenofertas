@@ -29,11 +29,25 @@ const Contact = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    alert('Gracias por contactarnos. Te responderemos pronto.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    try {
+      await fetch('https://formsubmit.co/ajax/insideproevents@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          _subject: 'Nuevo contacto desde TerrenoFertas',
+        }),
+      });
+      alert('Gracias por contactarnos. Te responderemos pronto.');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch {
+      alert('Hubo un error al enviar el mensaje. Por favor intenta nuevamente.');
+    }
   };
 
   const contactInfo = [
