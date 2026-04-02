@@ -50,7 +50,7 @@ function App() {
             <>
               <Hero />
               <Intro />
-              <Properties onShowRiveraCoiges={setShowRiveraCoiges} onShowMañihuales={setShowMañihuales} onShowRioBlanco={setShowRioBlanco} onShowSantuarioRioCondor={setShowSantuarioRioCondor} />
+              <Properties onShowRiveraCoigues={setShowRiveraCoigues} onShowMañihuales={setShowMañihuales} onShowRioBlanco={setShowRioBlanco} onShowSantuarioRioCondor={setShowSantuarioRioCondor} />
               <International />
               <Contact />
             </>
