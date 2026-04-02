@@ -300,7 +300,7 @@ const Mañihuales = () => {
                frameBorder="0"
                scrolling="no"
                allowFullScreen
-               src="https://www.google.com/maps/@-45.302086,-72.352103,1225m/data=!3m1!1e3?hl=es-419&entry=ttu&g_ep=EgoyMDI2MDMzMC4wIKXMDSoASAFQAw%3D%3D"
+               src="https://www.google.com/maps?q=-45.302086,-72.352103&hl=es&z=14&output=embed"
                title="Mapa de Praderas de Mañihuales"
              />
            </div>
