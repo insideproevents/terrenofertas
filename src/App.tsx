@@ -10,7 +10,6 @@ import RiveraCoigues from './sections/RiveraCoigues';
 import Mañihuales from './sections/Mañihuales';
 import RioBlanco from './sections/RioBlanco';
 import SantuarioRioCondor from './sections/SantuarioRioCondor';
-import { MessageSquare } from 'lucide-react';
 
 function App() {
   const [showRiveraCoigues, setShowRiveraCoigues] = useState(false);
@@ -66,7 +65,7 @@ function App() {
             rel="noopener noreferrer"
             className="bg-[#25D366] text-white rounded-full p-3 shadow-lg hover:bg-[#1ebe5d] transition-colors"
           >
-            <MessageSquare className="w-5 h-5" />
+            <img src="/whatsapp.png" alt="WhatsApp" className="w-6 h-6" />
             <span className="hidden sm:inline-block font-medium text-sm">Cotiza aqui</span>
           </a>
         </div>
