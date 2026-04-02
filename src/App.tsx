@@ -10,6 +10,7 @@ import RiveraCoigues from './sections/RiveraCoigues';
 import Mañihuales from './sections/Mañihuales';
 import RioBlanco from './sections/RioBlanco';
 import SantuarioRioCondor from './sections/SantuarioRioCondor';
+import { MessageSquare } from 'lucide-react';
 
 function App() {
   const [showRiveraCoigues, setShowRiveraCoigues] = useState(false);
@@ -27,37 +28,50 @@ function App() {
     }
   };
 
-  return (
-    <div className="min-h-screen bg-[#e8f7fa]">
-      <Navbar 
-        onShowRiveraCoigues={setShowRiveraCoigues} 
-        onShowMañihuales={setShowMañihuales}
-        onShowRioBlanco={setShowRioBlanco}
-        onShowSantuarioRioCondor={setShowSantuarioRioCondor}
-        onShowHome={handleShowHome} 
-      />
+   return (
+     <div className="min-h-screen bg-[#e8f7fa] relative">
+       <Navbar 
+         onShowRiveraCoigues={setShowRiveraCoigues} 
+         onShowMañihuales={setShowMañihuales}
+         onShowRioBlanco={setShowRioBlanco}
+         onShowSantuarioRioCondor={setShowSantuarioRioCondor}
+         onShowHome={handleShowHome} 
+       />
       <main>
-        {showRiveraCoigues ? (
-          <RiveraCoigues />
-        ) : showMañihuales ? (
-          <Mañihuales />
-        ) : showRioBlanco ? (
-          <RioBlanco />
-        ) : showSantuarioRioCondor ? (
-          <SantuarioRioCondor />
-        ) : (
-          <>
-            <Hero />
-            <Intro />
-            <Properties onShowRiveraCoigues={setShowRiveraCoigues} onShowMañihuales={setShowMañihuales} onShowRioBlanco={setShowRioBlanco} onShowSantuarioRioCondor={setShowSantuarioRioCondor} />
-            <International />
-            <Contact />
-          </>
-        )}
-      </main>
-      {!showRiveraCoigues && !showMañihuales && !showRioBlanco && !showSantuarioRioCondor && <Footer />}
-    </div>
-  );
+          {showRiveraCoigues ? (
+            <RiveraCoigues />
+          ) : showMañihuales ? (
+            <Mañihuales />
+          ) : showRioBlanco ? (
+            <RioBlanco />
+          ) : showSantuarioRioCondor ? (
+            <SantuarioRioCondor />
+          ) : (
+            <>
+              <Hero />
+              <Intro />
+              <Properties onShowRiveraCoiges={setShowRiveraCoiges} onShowMañihuales={setShowMañihuales} onShowRioBlanco={setShowRioBlanco} onShowSantuarioRioCondor={setShowSantuarioRioCondor} />
+              <International />
+              <Contact />
+            </>
+          )}
+        </main>
+        {!showRiveraCoigues && !showMañihuales && !showRioBlanco && !showSantuarioRioCondor && <Footer />}
+        
+        {/* WhatsApp Button - Always visible */}
+        <div className="fixed bottom-6 right-6 z-[9999] flex items-center space-x-2">
+          <a 
+            href="https://wa.me/56989608591"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#25D366] text-white rounded-full p-3 shadow-lg hover:bg-[#1ebe5d] transition-colors"
+          >
+            <MessageSquare className="w-5 h-5" />
+            <span className="hidden sm:inline-block font-medium text-sm">Cotiza aqui</span>
+          </a>
+        </div>
+      </div>
+   );
 }
 
 export default App;
