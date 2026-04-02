@@ -58,15 +58,13 @@ function App() {
         {!showRiveraCoigues && !showMañihuales && !showRioBlanco && !showSantuarioRioCondor && <Footer />}
         
         {/* WhatsApp Button - Always visible */}
-        <div className="fixed bottom-6 right-6 z-[9999] flex items-center space-x-2">
+        <div className="fixed bottom-6 right-6 z-[9999]">
           <a 
             href="https://wa.me/56989608591"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25D366] text-white rounded-full p-3 shadow-lg hover:bg-[#1ebe5d] transition-colors"
           >
-            <img src="/whatsapp.png" alt="WhatsApp" className="w-6 h-6" />
-            <span className="hidden sm:inline-block font-medium text-sm">Cotiza aqui</span>
+            <img src="/whatsapp.png" alt="WhatsApp" className="w-10 h-10" />
           </a>
         </div>
       </div>
