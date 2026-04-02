@@ -64,7 +64,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/whatsapp.png" alt="WhatsApp" className="w-40 h-40" />
+            <img src="/whatsapp.png" alt="WhatsApp" className="w-20 h-20" />
           </a>
         </div>
       </div>
