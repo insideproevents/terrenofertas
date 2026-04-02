@@ -72,7 +72,7 @@ const RioBlanco = () => {
           </h1>
           <p className="text-lg md:text-xl font-light mb-4 max-w-2xl mx-auto leading-relaxed text-white/90">
             Un refugio exclusivo en plena naturaleza patagónica. 
-            Parcelas con vistas a montañas nevadas, ríos cristalinos y bosques nativeos.
+            Parcelas con vistas a montañas nevadas, ríos cristalinos y bosques nativos.
           </p>
           <div className="mt-10">
             <p className="text-sm uppercase tracking-[0.2em] mb-2 text-white/70">Desde</p>

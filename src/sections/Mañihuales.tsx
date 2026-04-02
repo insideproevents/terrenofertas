@@ -261,30 +261,53 @@ const Mañihuales = () => {
         </div>
       </section>
 
-      {/* Master Plan Section */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Master Plan</p>
-            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
-              Master <span className="italic text-[#5bc0de]">Plan</span>
-            </h2>
-          </div>
-          <div className="rounded-lg overflow-hidden shadow-2xl">
-            <iframe
-              width="100%"
-              height="600"
-              frameBorder="0"
-              scrolling="no"
-              allowFullScreen
-              src="https://www.lanube360.com/praderas-de-manihuales/"
-              title="Master Plan Praderas de Mañihuales"
-            />
-          </div>
-        </div>
-      </section>
+       {/* Master Plan Section */}
+       <section className="py-24 lg:py-32 bg-white">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-16">
+             <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Master Plan</p>
+             <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+               Master <span className="italic text-[#5bc0de]">Plan</span>
+             </h2>
+           </div>
+           <div className="rounded-lg overflow-hidden shadow-2xl">
+             <iframe
+               width="100%"
+               height="600"
+               frameBorder="0"
+               scrolling="no"
+               allowFullScreen
+               src="https://www.lanube360.com/praderas-de-manihuales/"
+               title="Master Plan Praderas de Mañihuales"
+             />
+           </div>
+         </div>
+       </section>
 
-      {/* Contact Form */}
+       {/* Map Section */}
+       <section className="py-24 lg:py-32 bg-white">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-16">
+             <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Mapa</p>
+             <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+               Ubicación <span className="italic text-[#5bc0de]">Mañihuales</span>
+             </h2>
+           </div>
+           <div className="rounded-lg overflow-hidden shadow-2xl">
+             <iframe
+               width="100%"
+               height="600"
+               frameBorder="0"
+               scrolling="no"
+               allowFullScreen
+               src="https://www.google.com/maps/@-45.302086,-72.352103,1225m/data=!3m1!1e3?hl=es-419&entry=ttu&g_ep=EgoyMDI2MDMzMC4wIKXMDSoASAFQAw%3D%3D"
+               title="Mapa de Praderas de Mañihuales"
+             />
+           </div>
+         </div>
+       </section>
+
+       {/* Contact Form */}
       <section id="contacto" className="py-24 lg:py-32 bg-[#e8f4f8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
