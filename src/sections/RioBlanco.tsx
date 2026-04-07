@@ -159,23 +159,27 @@ const RioBlanco = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
-                    <span>Acceso directo a río de aguas cristalinas</span>
+                    <span>Todos los terrenos se entregan estacados</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
-                    <span>Vistas a la cordillera nevada</span>
+                    <span>14 Terrenos a orillas del cauce de agua dulce proveniente de glaciares</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
-                    <span>Seguridad privada 24/7</span>
+                    <span>Camino interior de servidumbre del proyecto realizado</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
-                    <span>Servicios: agua, electricidad, fibra óptica</span>
+                    <span>Todas las parcelas tienen acceso a orilla del Río Blanco a través de una servidumbre</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
-                    <span>Camino pavimentado todo el año</span>
+                    <span>A 15 minutos de Puerto Aysén por caminos bien mantenidos todo el año</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
+                    <span>Terrenos aprobados por el SAG. Entrega inmediata</span>
                   </li>
                 </ul>
               </div>
