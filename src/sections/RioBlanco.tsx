@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { MapPin, Send, ChevronDown, Trees, Droplets, Mountain, Shield, Check } from 'lucide-react';
+import { MapPin, Send, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -255,19 +255,16 @@ const RioBlanco = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: Mountain,
                 title: 'Vistas a la Cordillera',
                 description: 'Panoramas ininterrumpidas de montañas nevadas y glaciares durante todo el año.',
                 image: '/rioblanco/otras/cordillera.jpg'
               },
               {
-                icon: Droplets,
                 title: 'Río de Agua Cristalina',
                 description: 'Acceso privado a río de aguas cristalinas, ideal para pesca deportiva y navegación.',
                 image: '/rioblanco/otras/agua_cristalina.jpg'
               },
               {
-                icon: Trees,
                 title: 'Bosque Nativo',
                 description: 'Entorno de bosque nativo preservado, con senderos para caminatas y observación de fauna.',
                 image: '/rioblanco/otras/bosque_nativo.jpg'
