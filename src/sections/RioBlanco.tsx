@@ -268,21 +268,6 @@ const RioBlanco = () => {
                 icon: Trees,
                 title: 'Bosque Nativo',
                 description: 'Entorno de bosque nativo preservado, con senderos para caminatas y observación de fauna.'
-              },
-              {
-                icon: Shield,
-                title: 'Seguridad Privada',
-                description: 'Acceso controlado con vigilancia 24/7 y cercado perimetral completo.'
-              },
-              {
-                icon: Check,
-                title: 'Servicios Disponibles',
-                description: 'Agua potable, electricidad y fibra óptica disponibles en cada parcela.'
-              },
-              {
-                icon: MapPin,
-                title: 'Acceso Pavimentado',
-                description: 'A solo 1 hora de la ciudad más cercana, con camino pavimentado todo el año.'
               }
             ].map((feature, index) => (
               <div 
@@ -334,7 +319,7 @@ const RioBlanco = () => {
           <div className="text-center mb-16">
             <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Fotos Aéreas</p>
             <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
-              Tomas Aereas del <span className="italic text-[#5bc0de]">Proyecto</span>
+              Fotos Aéreas del <span className="italic text-[#5bc0de]">Proyecto</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
