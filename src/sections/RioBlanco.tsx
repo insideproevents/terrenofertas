@@ -66,13 +66,14 @@ const RioBlanco = () => {
         </div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto pt-20">
-          <p className="text-sm uppercase tracking-[0.3em] text-[#5bc0de] mb-6">Patagonia Central, Chile</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-white mb-6">Patagonia Chilena</p>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight">
             Río <span className="italic text-[#5bc0de]">Blanco</span>
           </h1>
           <p className="text-lg md:text-xl font-light mb-4 max-w-2xl mx-auto leading-relaxed text-white/90">
             Un refugio exclusivo en plena naturaleza patagónica. 
             Parcelas con vistas a montañas nevadas, ríos cristalinos y bosques nativos.
+            Vive tu propio refugio a 15 minutos de Puerto Aysén.
           </p>
           <div className="mt-10">
             <p className="text-sm uppercase tracking-[0.2em] mb-2 text-white/70">Desde</p>
