@@ -1,17 +1,37 @@
-import { useState } from 'react';
-import { MapPin, Send, ChevronDown } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { MapPin, Send, ChevronDown, Trees, Droplets, Mountain, Shield, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 
 const RioBlanco = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     message: '',
   });
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -214,6 +234,69 @@ const RioBlanco = () => {
                 <p className="font-display text-lg italic">"Donde el río susurra secretos de montaña"</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section 
+        id="caracteristicas"
+        ref={sectionRef}
+        className="py-24 lg:py-32 bg-[#0a3d4a]"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#5bc0de] mb-4">¿Por Qué Elegirnos?</p>
+            <h2 className="font-display text-4xl md:text-5xl text-white">
+              Características que <span className="italic text-[#5bc0de]">Hacen la Diferencia</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: Mountain,
+                title: 'Vistas a la Cordillera',
+                description: 'Panoramas ininterrumpidas de montañas nevadas y glaciares durante todo el año.'
+              },
+              {
+                icon: Droplets,
+                title: 'Río de Agua Cristalina',
+                description: 'Acceso privado a río de aguas cristalinas, ideal para pesca deportiva y navegación.'
+              },
+              {
+                icon: Trees,
+                title: 'Bosque Nativo',
+                description: 'Entorno de bosque nativo preservado, con senderos para caminatas y observación de fauna.'
+              },
+              {
+                icon: Shield,
+                title: 'Seguridad Privada',
+                description: 'Acceso controlado con vigilancia 24/7 y cercado perimetral completo.'
+              },
+              {
+                icon: Check,
+                title: 'Servicios Disponibles',
+                description: 'Agua potable, electricidad y fibra óptica disponibles en cada parcela.'
+              },
+              {
+                icon: MapPin,
+                title: 'Acceso Pavimentado',
+                description: 'A solo 1 hora de la ciudad más cercana, con camino pavimentado todo el año.'
+              }
+            ].map((feature, index) => (
+              <div 
+                key={index}
+                className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:bg-white/10 transition-all duration-500 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+                <feature.icon className="w-12 h-12 text-[#5bc0de] mb-6" />
+                <h3 className="font-display text-xl text-white mb-4">{feature.title}</h3>
+                <p className="text-white/70 leading-relaxed">{feature.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
