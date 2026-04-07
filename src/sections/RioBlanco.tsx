@@ -96,6 +96,83 @@ const RioBlanco = () => {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-12 bg-[#e8f4f8]">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="relative rounded-lg overflow-hidden shadow-2xl">
+            <video
+              src="/rioblanco/Reel_Rio_blanco.mp4"
+              controls
+              autoPlay
+              loop
+              playsInline
+              className="w-full h-auto"
+            >
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      {/* Caracteristicas del Proyecto Section */}
+      <section className="py-24 lg:py-32 bg-[#e8f4f8]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Detalles del Proyecto</p>
+              <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a] mb-8">
+                Características del <span className="italic text-[#5bc0de]">Proyecto</span>
+              </h2>
+              <div className="space-y-6 text-[#0a3d4a]/80 leading-relaxed">
+                <p>
+                  <strong className="text-[#0a3d4a]">Río Blanco</strong> ofrece un entorno exclusivo 
+                  donde la naturaleza y el confort se unen. Cada parcela ha sido diseñada para 
+                  maximizar las vistas y la privacidad de sus propietarios.
+                </p>
+                <ul className="space-y-4 mt-6">
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
+                    <span>Parcelas de 5.000 a 10.000 m²</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
+                    <span>Acceso directo a río de aguas cristalinas</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
+                    <span>Vistas a la cordillera nevada</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
+                    <span>Seguridad privada 24/7</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
+                    <span>Servicios: agua, electricidad, fibra óptica</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-[#5bc0de] rounded-full mt-2" />
+                    <span>Camino pavimentado todo el año</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {['000', '001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011'].map((num) => (
+                <div key={num} className="overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src={`/rioblanco/caracteristicas/caract_${num}.jpg`}
+                    alt={`Característica ${num}`}
+                    className="w-full h-48 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section className="py-24 lg:py-32 bg-[#e8f4f8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -202,6 +279,88 @@ const RioBlanco = () => {
                 <p className="text-white/70 leading-relaxed">{feature.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-24 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Galería</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+              Galería <span className="italic text-[#5bc0de]">Río Blanco</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '014', '015', '016', '018', '019', '020', '021', '022'].map((num) => (
+              <div
+                key={num}
+                className="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              >
+                <img
+                  src={`/rioblanco/galeria/rio_blanco_${num}.jpg`}
+                  alt={`Río Blanco ${num}`}
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Tomas Aereas Section */}
+      <section className="py-24 lg:py-32 bg-[#e8f4f8]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Fotos Aéreas</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+              Tomas Aereas del <span className="italic text-[#5bc0de]">Proyecto</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              'DJI_0087-HDR', 'DJI_0093-HDR', 'DJI_0097-HDR', 'DJI_0100-HDR',
+              'DJI_0192-HDR', 'DJI_0198-HDR', 'DJI_0208-HDR', 'DJI_0214-HDR',
+              'DJI_0226-HDR', 'DJI_0260-HDR', 'DJI_0314-HDR', 'DJI_0520-HDR',
+              'DJI_0606-HDR', 'DJI_0613-HDR', 'DJI_0623-HDR', '18102022-DJI_0623-HDR'
+            ].map((name) => (
+              <div
+                key={name}
+                className="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              >
+                <img
+                  src={`/rioblanco/dron/${name}.jpg`}
+                  alt={`Toma aérea ${name}`}
+                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-24 lg:py-32 bg-[#e8f4f8]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Mapa</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+              Ubicación <span className="italic text-[#5bc0de]">Río Blanco</span>
+            </h2>
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-2xl">
+            <iframe
+              width="100%"
+              height="600"
+              frameBorder="0"
+              scrolling="no"
+              allowFullScreen
+              src="https://www.google.com/maps?q=-45.6157778,-72.8013056&hl=es&z=14&output=embed"
+              title="Mapa de Río Blanco"
+            />
           </div>
         </div>
       </section>
