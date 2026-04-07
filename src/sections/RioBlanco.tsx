@@ -60,7 +60,7 @@ const RioBlanco = () => {
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(https://kimi-web-img.moonshot.cn/img/viajesikea.com/f42a14b7bc08109b58f7e29152cc024d3eedb0b3.jpg)' }}
+          style={{ backgroundImage: 'url(/rioblanco/otras/portada_2.jpg)' }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-[#0a3d4a]/60 via-[#0a3d4a]/40 to-[#0a3d4a]/70" />
         </div>
@@ -257,29 +257,38 @@ const RioBlanco = () => {
               {
                 icon: Mountain,
                 title: 'Vistas a la Cordillera',
-                description: 'Panoramas ininterrumpidas de montañas nevadas y glaciares durante todo el año.'
+                description: 'Panoramas ininterrumpidas de montañas nevadas y glaciares durante todo el año.',
+                image: '/rioblanco/otras/cordillera.jpg'
               },
               {
                 icon: Droplets,
                 title: 'Río de Agua Cristalina',
-                description: 'Acceso privado a río de aguas cristalinas, ideal para pesca deportiva y navegación.'
+                description: 'Acceso privado a río de aguas cristalinas, ideal para pesca deportiva y navegación.',
+                image: '/rioblanco/otras/agua_cristalina.jpg'
               },
               {
                 icon: Trees,
                 title: 'Bosque Nativo',
-                description: 'Entorno de bosque nativo preservado, con senderos para caminatas y observación de fauna.'
+                description: 'Entorno de bosque nativo preservado, con senderos para caminatas y observación de fauna.',
+                image: '/rioblanco/otras/bosque_nativo.jpg'
               }
             ].map((feature, index) => (
               <div 
                 key={index}
-                className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:bg-white/10 transition-all duration-500 ${
+                className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 transition-all duration-500 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <feature.icon className="w-12 h-12 text-[#5bc0de] mb-6" />
-                <h3 className="font-display text-xl text-white mb-4">{feature.title}</h3>
-                <p className="text-white/70 leading-relaxed">{feature.description}</p>
+                <img 
+                  src={feature.image} 
+                  alt={feature.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-8 pt-6">
+                  <h3 className="font-display text-xl text-white mb-4">{feature.title}</h3>
+                  <p className="text-white/70 leading-relaxed">{feature.description}</p>
+                </div>
               </div>
             ))}
           </div>
