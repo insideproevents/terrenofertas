@@ -99,15 +99,15 @@ const RioBlanco = () => {
 
       {/* Video Section */}
       <section className="py-12 bg-[#e8f4f8]">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="relative rounded-lg overflow-hidden shadow-2xl">
+        <div className="w-full">
+          <div className="relative w-full">
             <video
               src="/rioblanco/Reel_Rio_blanco.mp4"
               controls
               autoPlay
               loop
               playsInline
-              className="w-full h-auto"
+              className="w-full h-auto max-h-[80vh]"
             >
               Tu navegador no soporta el video.
             </video>
