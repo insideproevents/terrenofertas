@@ -226,9 +226,9 @@ const RioBlanco = () => {
             </div>
             <div className="relative">
               <img
-                src="https://kimi-web-img.moonshot.cn/img/viajesikea.com/f42a14b7bc08109b58f7e29152cc024d3eedb0b3.jpg"
+                src="/rioblanco/otras/refugio-rio-blanco-explanada.jpg"
                 alt="Río Blanco Patagonia"
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl w-full h-auto"
               />
               <div className="absolute -bottom-6 -left-6 bg-[#0a3d4a] text-white p-6 rounded-lg shadow-xl max-w-xs">
                 <p className="font-display text-lg italic">"Donde el río susurra secretos de montaña"</p>
