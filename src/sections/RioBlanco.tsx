@@ -199,22 +199,24 @@ const RioBlanco = () => {
               </h2>
               <div className="space-y-6 text-[#0a3d4a]/80 leading-relaxed">
                 <p>
-                  <strong className="text-[#0a3d4a]">Río Blanco</strong> es un santuario natural ubicado 
-                  en el corazón de la Patagonia chilena. Este proyecto ofrece{' '}
-                  <strong className="text-[#0a3d4a]">parcelas de entre 5.000 y 10.000 m²</strong>, 
-                  cada una con acceso directo a un río de aguas cristalinas y vistas privilegiadas 
-                  a la cordillera de los Andes.
+                  Río Blanco es un santuario natural ubicado en el corazón de la Patagonia chilena. 
+                  Este proyecto ofrece parcelas de entre 5.000 y 10.000 m², cada una con acceso directo 
+                  a un río de aguas cristalinas y vistas privilegiadas a la cordillera de los Andes.
                 </p>
                 <p>
-                  El proyecto se integra perfectamente con el entorno natural: senderos内部的, 
-                  áreas de conservación y espacios diseñados para respetar la biodiversidad local. 
-                  Aquí podrás despertar chaque día con el sonido del agua y la vista de montañas nevadas.
+                  Inviertes en un lugar donde la tranquilidad es pan de cada día, la seguridad es 
+                  constante y puedes disfrutar de una calidad de vida diferente a los estándares de la ciudad.
                 </p>
                 <p>
-                  Con acceso por camino pavimentado y todos los servicios disponibles, 
-                  <strong className="text-[#0a3d4a]">Río Blanco</strong> es la opción ideal para quienes 
-                  buscan un refugio de fin de semana o una inversión con potencial de plusvalía en una 
-                  zona de alto crecimiento turístico.
+                  Además, estás en una región de Chile que, gracias a las lluvias que alimentan un rico 
+                  sistema hídrico de ríos, lagos y lagunas, es nacional e internacionalmente reconocida 
+                  como Reserva de Vida y de Agua, descartando futuros problemas con el agua.
+                </p>
+                <p>
+                  Es una región que también está creciendo en temas de energías limpias y renovables, 
+                  lo que te permite proyectar una vida siempre rodeada de un entorno prístino y limpio. 
+                  Además, aparte de los caminos, no existe intervención humana, lo que te asegura un 
+                  entorno puro y seguro para que puedas vivir tranquilo en tu propio espacio.
                 </p>
               </div>
               <div className="mt-8 flex items-center gap-2">
