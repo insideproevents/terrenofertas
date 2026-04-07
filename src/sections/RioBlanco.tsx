@@ -116,16 +116,38 @@ const RioBlanco = () => {
       </section>
 
       {/* Caracteristicas del Proyecto Section */}
-      <section className="py-24 lg:py-32 bg-[#e8f4f8]">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid lg:grid-cols-12 gap-8 items-start">
+            {/* Imagenes a la izquierda */}
+            <div className="lg:col-span-7 grid grid-cols-3 gap-4">
+              {['000', '001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011'].map((num, index) => (
+                <div 
+                  key={num} 
+                  className={`overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 ${
+                    index === 0 ? 'col-span-2 row-span-2' : ''
+                  }`}
+                >
+                  <img
+                    src={`/rioblanco/caracteristicas/caract_${num}.jpg`}
+                    alt={`Característica ${num}`}
+                    className={`w-full object-cover hover:scale-105 transition-transform duration-500 ${
+                      index === 0 ? 'h-full' : 'h-40'
+                    }`}
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+            
+            {/* Texto a la derecha */}
+            <div className="lg:col-span-5 lg:sticky lg:top-24">
               <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Detalles del Proyecto</p>
               <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a] mb-8">
                 Características del <span className="italic text-[#5bc0de]">Proyecto</span>
               </h2>
               <div className="space-y-6 text-[#0a3d4a]/80 leading-relaxed">
-                <p>
+                <p className="text-lg">
                   <strong className="text-[#0a3d4a]">Río Blanco</strong> ofrece un entorno exclusivo 
                   donde la naturaleza y el confort se unen. Cada parcela ha sido diseñada para 
                   maximizar las vistas y la privacidad de sus propietarios.
@@ -157,18 +179,6 @@ const RioBlanco = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {['000', '001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011'].map((num) => (
-                <div key={num} className="overflow-hidden rounded-lg shadow-lg">
-                  <img
-                    src={`/rioblanco/caracteristicas/caract_${num}.jpg`}
-                    alt={`Característica ${num}`}
-                    className="w-full h-48 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
             </div>
           </div>
         </div>
