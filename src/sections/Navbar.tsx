@@ -96,6 +96,12 @@ const Navbar = ({ onShowRiveraCoigues, onShowMañihuales, onShowRioBlanco, onSho
       setIsMobileMenuOpen(false);
       return;
     }
+    // Clean URL for section links (contacto, etc)
+    if (href.startsWith('#') && href !== '#inicio' && href !== '#catalogo') {
+      if (onShowHome) {
+        onShowHome(false);
+      }
+    }
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
