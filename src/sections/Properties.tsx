@@ -27,8 +27,7 @@ const properties: Property[] = [
     name: 'Río Blanco',
     subtitle: 'Refugio',
     location: 'Patagonia Central, Chile',
-    image:
-      'https://kimi-web-img.moonshot.cn/img/viajesikea.com/f42a14b7bc08109b58f7e29152cc024d3eedb0b3.jpg',
+    image: '/rioblanco/otras/portada_rio_blanco.jpg',
     featured: true,
     href: '#rio-blanco',
   },
