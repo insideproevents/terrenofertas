@@ -31,8 +31,8 @@ function App() {
     setShowMañihuales(false);
     setShowRioBlanco(false);
     setShowSantuarioRioCondor(false);
+    window.history.pushState({}, '', window.location.pathname);
     if (show) {
-      window.history.pushState({}, '', window.location.pathname);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
