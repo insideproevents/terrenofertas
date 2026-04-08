@@ -351,6 +351,28 @@ const RioBlanco = () => {
         </div>
       </section>
 
+      {/* Master Plan Section */}
+      <section className="py-24 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#0a3d4a]/60 mb-4">Master Plan</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[#0a3d4a]">
+              Tour <span className="italic text-[#5bc0de]">360°</span>
+            </h2>
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-2xl">
+            <iframe
+              src="https://digitaldesign.cl/360/Rio_Blanco/tour.html"
+              width="100%"
+              height="700"
+              frameBorder="0"
+              allowFullScreen
+              title="Tour 360° Río Blanco"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Map Section */}
       <section className="py-24 lg:py-32 bg-[#e8f4f8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
