@@ -62,19 +62,21 @@ interface PropertiesProps {
 
 const Properties = ({ onShowRiveraCoigues, onShowMañihuales, onShowRioBlanco, onShowSantuarioRioCondor }: PropertiesProps) => {
   const handlePropertyClick = (href?: string) => {
-    if (href === '#rivera-coigues' && onShowRiveraCoigues) {
+    const propertyParam = href?.replace('?property=', '');
+    
+    if ((propertyParam === 'rivera-coigues' || href === '#rivera-coigues') && onShowRiveraCoigues) {
       onShowRiveraCoigues(true);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    if (href === '#mañihuales' && onShowMañihuales) {
+    if ((propertyParam === 'mañihuales' || href === '#mañihuales') && onShowMañihuales) {
       onShowMañihuales(true);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    if (href === '#rio-blanco' && onShowRioBlanco) {
+    if ((propertyParam === 'rio-blanco' || href === '#rio-blanco') && onShowRioBlanco) {
       onShowRioBlanco(true);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    if (href === '#santuario-rio-condor' && onShowSantuarioRioCondor) {
+    if ((propertyParam === 'santuario-rio-condor' || href === '#santuario-rio-condor') && onShowSantuarioRioCondor) {
       onShowSantuarioRioCondor(true);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
