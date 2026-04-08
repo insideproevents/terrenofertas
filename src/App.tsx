@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
 import Intro from './sections/Intro';
@@ -16,6 +16,15 @@ function App() {
   const [showMañihuales, setShowMañihuales] = useState(false);
   const [showRioBlanco, setShowRioBlanco] = useState(false);
   const [showSantuarioRioCondor, setShowSantuarioRioCondor] = useState(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const property = params.get('property');
+    if (property === 'rivera-coigues') setShowRiveraCoigues(true);
+    if (property === 'mañihuales') setShowMañihuales(true);
+    if (property === 'rio-blanco') setShowRioBlanco(true);
+    if (property === 'santuario-rio-condor') setShowSantuarioRioCondor(true);
+  }, []);
 
   const handleShowHome = (show: boolean) => {
     setShowRiveraCoigues(false);

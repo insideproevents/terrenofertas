@@ -20,7 +20,7 @@ const properties: Property[] = [
     image:
       'https://kimi-web-img.moonshot.cn/img/www.pew.org/f9ad3f46cdfa8ae3808f5ff945855e27916a6eda.jpg',
     featured: true,
-    href: '#rivera-coigues',
+    href: '?property=rivera-coigues',
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const properties: Property[] = [
     location: 'Patagonia Central, Chile',
     image: '/rioblanco/otras/portada_rio_blanco.jpg',
     featured: true,
-    href: '#rio-blanco',
+    href: '?property=rio-blanco',
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const properties: Property[] = [
     image:
       '/portada_mañihuales.jpg',
     featured: true,
-    href: '#mañihuales',
+    href: '?property=mañihuales',
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const properties: Property[] = [
     image:
       'https://kimi-web-img.moonshot.cn/img/www.gochile.cl/48fc88f7fc340cebee328b0008472a88ddcf86dd.jpg',
     featured: true,
-    href: '#santuario-rio-condor',
+    href: '?property=santuario-rio-condor',
   },
 ];
 
