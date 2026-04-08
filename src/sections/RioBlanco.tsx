@@ -226,7 +226,7 @@ const RioBlanco = () => {
             </div>
             <div className="relative">
               <img
-                src="/rioblanco/otras/refugio-rio-blanco-explanada.jpg"
+                src="/rioblanco/dron/refugio_perfecto.jpg"
                 alt="Río Blanco Patagonia"
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
