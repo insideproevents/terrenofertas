@@ -63,25 +63,26 @@ interface PropertiesProps {
 const Properties = ({ onShowRiveraCoigues, onShowMañihuales, onShowRioBlanco, onShowSantuarioRioCondor }: PropertiesProps) => {
   const handlePropertyClick = (href?: string) => {
     const propertyParam = href?.replace('?property=', '');
+    const path = window.location.pathname;
     
     if ((propertyParam === 'rivera-coigues' || href === '#rivera-coigues') && onShowRiveraCoigues) {
       onShowRiveraCoigues(true);
-      window.history.pushState({}, '', '?property=rivera-coigues');
+      window.history.pushState({}, '', `${path}?property=rivera-coigues`);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     if ((propertyParam === 'mañihuales' || href === '#mañihuales') && onShowMañihuales) {
       onShowMañihuales(true);
-      window.history.pushState({}, '', '?property=mañihuales');
+      window.history.pushState({}, '', `${path}?property=mañihuales`);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     if ((propertyParam === 'rio-blanco' || href === '#rio-blanco') && onShowRioBlanco) {
       onShowRioBlanco(true);
-      window.history.pushState({}, '', '?property=rio-blanco');
+      window.history.pushState({}, '', `${path}?property=rio-blanco`);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     if ((propertyParam === 'santuario-rio-condor' || href === '#santuario-rio-condor') && onShowSantuarioRioCondor) {
       onShowSantuarioRioCondor(true);
-      window.history.pushState({}, '', '?property=santuario-rio-condor');
+      window.history.pushState({}, '', `${path}?property=santuario-rio-condor`);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
