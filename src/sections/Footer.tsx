@@ -28,7 +28,7 @@ const Footer = () => {
     { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Facebook, href: '#', label: 'Facebook' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:contacto@terrenofertas.cl', label: 'Email' },
+    { icon: Mail, href: 'mailto:contacto@patagoniaselect.cl', label: 'Email' },
   ];
 
   const scrollToSection = (href: string) => {
@@ -61,7 +61,7 @@ const Footer = () => {
               >
                 <Mountain className="w-10 h-10 text-[#5bc0de] group-hover:scale-110 transition-transform duration-300" />
                 <span className="font-light tracking-[0.25em] text-xl uppercase">
-                  TERRENOFERTAS
+                  PATAGONIA SELECT
                 </span>
               </a>
               <p className="text-white/60 text-sm leading-relaxed font-light max-w-md mb-8">
@@ -126,7 +126,7 @@ const Footer = () => {
         <div className="w-full px-6 lg:px-12 xl:px-20 py-6">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-white/40 text-xs font-light">
-              © {currentYear} Terrenofertas. Todos los derechos reservados.
+              © {currentYear} Patagonia Select. Todos los derechos reservados.
             </p>
             <p className="text-white/70 text-sm font-light">
               Diseñado por <a href="https://www.mimarcaenlinea.cl" target="_blank" rel="noopener noreferrer" className="text-[#5bc0de] hover:text-white transition-colors">Mi Marca en Linea</a>.

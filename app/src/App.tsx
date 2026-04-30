@@ -40,9 +40,9 @@ function App() {
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 30L18 6L30 30" stroke="#4ecdc4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M10 22H26" stroke="#4ecdc4" strokeWidth="2" strokeLinecap="round"/>
-                <circle cx="18" cy="18" r="2" fill="#4ecdc4"/>
+<circle cx="18" cy="18" r="2" fill="#4ecdc4"/>
               </svg>
-              <span className="text-white text-lg font-medium tracking-wider">TERRENOFERTAS</span>
+              <span className="text-white text-lg font-medium tracking-wider">PATAGONIA SELECT</span>
             </a>
 
             {/* Desktop Navigation */}
