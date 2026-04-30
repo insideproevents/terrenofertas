@@ -138,8 +138,8 @@ const Navbar = ({ onShowRiveraCoigues, onShowMañihuales, onShowRioBlanco, onSho
                 className={`font-light tracking-[0.25em] text-lg uppercase transition-colors duration-300 ${
                   isScrolled ? 'text-white' : 'text-white'
                 }`}
-              >
-                TERRENOFERTAS
+>
+                PATAGONIA SELECT
               </span>
             </a>
 

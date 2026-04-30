@@ -40,7 +40,7 @@ const Contact = () => {
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          _subject: 'Nuevo contacto desde TerrenoFertas',
+_subject: 'Nuevo contacto desde Patagonia Select',
         }),
       });
       alert('Gracias por contactarnos. Te responderemos pronto.');
@@ -66,8 +66,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'contacto@terrenofertas.cl',
-      href: 'mailto:contacto@terrenofertas.cl',
+value: 'contacto@patagoniaselect.cl',
+      href: 'mailto:contacto@patagoniaselect.cl',
     },
     {
       icon: MapPin,
